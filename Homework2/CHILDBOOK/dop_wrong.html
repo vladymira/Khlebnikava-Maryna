@@ -1,8 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8" > -->
-    <meta content="">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дополнительное задание</title>
@@ -27,7 +26,8 @@
 
 <h2>Семантические и функциональные строчные теги</h2>
 <p>Пожелания автора:</p>
-<p><font color="red"><del>Данный текст убрать из монографии</del></font> и заменить его на <font color="blue"><ins>вновь помещённый текст.</ins></font></p>
+<p><span  style="color:red"><del>Данный текст убрать из монографии<del></del></span> и заменить его на <span  style="color:blue ; text-decoration-line: underline;">вновь помещённый текст.</span</p>
+</p>
 
 <hr>
 
@@ -44,14 +44,14 @@
 И опыт, сын ошибок трудных,<br>
 И гений, парадоксов друг,<br>
 И случай, бог изобретатель...
-</blockquote>
+</blockquote
 
 <hr>
 
 <h2>Семантические и функциональные строчные теги</h2>
 <p>
-    <strong>Тэг &lt;STRONG&gt; делает данный фрагмент текста более важным. </strong><em>Тэг &lt;e&gt; менее важным.</em>
-        В то время как теги &lt;b&gt; и &lt;i&gt; делают текст просто <b>полужирным</b> и <i>курсивом</i> соответственно.        
+    <strong>Тэг &ltSTRONG&gt делает данный фрагмент текста более важным. </strong><em>Тэг &lte&gt менее важным.</em>
+        В то время как теги &ltb&gt и &lti&gt делают текст просто <b>полужирным</b> и <i>курсивом</i> соответственно.        
 </p>
 
 <hr>
@@ -59,9 +59,9 @@
 <h2>Теги форматирования машинного языка</h2>
 <p>При выполнении программного кода на языке PERL:</p>
 <code>
-    #!/usr/local/bin/perl<br>
+    #!/usr/local/bin/perl <br>
     print "Content‐type: text/html\n\n";<br>
-    print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";<br>      
+    print "&ltH1&gtHello World&lt/H1&gt\n";<br>        
 </code>
 
 <p>
@@ -87,12 +87,11 @@
 </p>
 
 <hr>
-
 <h2>Теги над­ и подстрочных символов</h2>
 <h3 align="center">Магазин работает:</h3>
-<p align="center">c 08<sup><u>30</u></sup> до 18<sup><u>30</u></sup></p>
-<p align="center">обед c 13<sup><u>00</u></sup> до 14<sup><u>00</u></sup></p>
-<p align="center">выходной: <u>суббота, </u><u>воскресенье</u></p>
+<p align="center">c 08<sup><span style="text-decoration: underline;">30</span></sup> до 18<sup><span style="text-decoration: underline;">30</span></sup></p>
+<p align="center">обед c 13<sup><span style="text-decoration: underline;">00</span></sup> до 14<sup><span style="text-decoration: underline;">00</span></sup></p>
+<p align="center">выходной: <span style="text-decoration: underline;">суббота, </span><span style="text-decoration: underline;">воскресенье</span></p>
 
 <hr>
 <h2>Вот такой текст</h2>
@@ -102,10 +101,8 @@
 
 <hr>
 <h2>Акроним и курсив</h2>
-<!--ТФ: Y(<i>x</i>)=e<sup><i>-­iπx</i></sup>+log<sub><i>x</i></sub>4 <br>-->
-ТФ: Y(<var>x</var>)=e<sup><var>-­iπx</var></sup>+log<sub><var>x</var></sub>4
+ТФ: Y(<i>x</i>)=e<sup><i>-­iπx</i></sup>+log<sub><i>x</i></sub>4
 <hr>
-
 <h2>Тег small внтури абзаца</h2>
 <p align="right">
     <small>Создано при помощи блокнота&copy;</small>

@@ -9,5 +9,26 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+
+    font-family: 'Ubuntu Mono';
+    src: url('UbuntuMono-BoldItalic.eot');
+    src: url('UbuntuMono-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('UbuntuMono-BoldItalic.woff2') format('woff2'),
+        url('UbuntuMono-BoldItalic.woff') format('woff'),
+        url('UbuntuMono-BoldItalic.svg#UbuntuMono-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+
+    font-family: 'Pangolin';
+    src: url('Pangolin-Regular.eot');
+    src: url('Pangolin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Pangolin-Regular.woff2') format('woff2'),
+        url('Pangolin-Regular.woff') format('woff'),
+        url('Pangolin-Regular.svg#Pangolin-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 
