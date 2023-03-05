@@ -7,39 +7,87 @@
     <title>Табличная верстка</title>
 
     <style>
+          *
+        {            
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
         table
         {
-            width: 100%
+            width: 100%;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            border-collapse: collapse;
         }
+        
         thead, tfoot
         {
-            background-color: aquamarine;
+            background-color: #add8e6;
             text-align: center;
             color: blue;
-            
+            height: 20%;
+            font-size: larger;
+            font-weight: 550;
+           
+           
         }
 
-        li
+        thead td, tfoot td
         {
-            text-decoration: underline;
+            padding: 20px;
+        }
+
+       
+        tbody td:first-child
+        {
+            background-color: #f0e68c;
+            width: 250px;
+        }
+
+        tbody td:first-child li
+        {
             color: blue;            
         }
 
-        tbody td:first-child
+        tbody td:nth-child(2)
         {
-            background-color: blanchedalmond;
-            width: 30%;
+            vertical-align: top;
+            background: url("../images/football_ball.png") repeat-y right;
+            padding-left: 20px;
+     
         }
 
+        tbody td:nth-child(2) h2
+        {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .float_left
+        {
+            float: left;
+        }
+
+        /* tbody td:nth-child(2) img
+        {
+            margin-right: 20px;
+        } */
+
+        [src*="foot"]
+        {
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body>
     
     <table>
-        <thead class="sea_weave">
+        <thead>
             <tr>
-                <td colspan="2">ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</td>
+                <td colspan="2">                
+                    ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!                
+                </td>
             </tr>
         </thead>
         <tbody>
@@ -47,16 +95,42 @@
                 <td>
                     <b>Виды спорта:</b>
                     <ul>
-                        <li>конькобежный спорт</li>
-                        <li>биатлон</li>
-                        <li>футбол</li>
-                        <li>стрельба из лука</li>
-                        <li>прыжки в высоту</li>
-                        <li>прыжки в длину</li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="конькобежный спорт" target="_blank">конькобежный спорт</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="биатлон" target="_blank">биатлон</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="футбол" target="_blank">футбол</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="стрельба из лука" target="_blank">стрельба из лука</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="прыжки в высоту" target="_blank">прыжки в высоту</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title=">прыжки в длину" target="_blank">прыжки в длину</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="конькобежный спорт" target="_blank">конькобежный спорт</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="биатлон" target="_blank">биатлон</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="футбол" target="_blank">футбол</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="стрельба из лука" target="_blank">стрельба из лука</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="прыжки в высоту" target="_blank">прыжки в высоту</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title=">прыжки в длину" target="_blank">прыжки в длину</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="конькобежный спорт" target="_blank">конькобежный спорт</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="биатлон" target="_blank">биатлон</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="футбол" target="_blank">футбол</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="стрельба из лука" target="_blank">стрельба из лука</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="прыжки в высоту" target="_blank">прыжки в высоту</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title=">прыжки в длину" target="_blank">прыжки в длину</a></li>                        
                     </ul>
                 </td>
                 <td>
-aaaaaaaaaaaaaaa
+                    <h2>
+                        Футбол
+                    </h2>
+                    <img src="../images/football_picture.png" alt="картинка с кубком" class="float_left">
+                    <span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores ullam libero saepe rem fugit. Sapiente placeat assumenda soluta distinctio neque, tempore eum quidem debitis atque officiis consequuntur inventore corrupti.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo deserunt dolores, explicabo laborum unde earum modi repellat doloremque dolore maxime beatae error quis harum minima aut fugiat dolor ipsam!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laboriosam id temporibus quae explicabo illo laborum alias. Quidem nulla tempora non est, quibusdam repellat doloribus dolor culpa quis, pariatur exercitationem?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit in optio voluptate sit exercitationem aut quam nemo cupiditate quia itaque nisi necessitatibus maxime veniam, fugiat at beatae illo ratione?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo deserunt dolores, explicabo laborum unde earum modi repellat doloremque dolore maxime beatae error quis harum minima aut fugiat dolor ipsam!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laboriosam id temporibus quae explicabo illo laborum alias. Quidem nulla tempora non est, quibusdam repellat doloribus dolor culpa quis, pariatur exercitationem?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit in optio voluptate sit exercitationem aut quam nemo cupiditate quia itaque nisi necessitatibus maxime veniam, fugiat at beatae illo ratione?
+                    </span>
                 </td>
             </tr>
         </tbody>

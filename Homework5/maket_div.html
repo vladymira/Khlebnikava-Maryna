@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блочная верстка</title>
+
+    <style>
+
+        *
+        {            
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top_bottom
+        {
+            background-color: #add8e6;
+            text-align: center;
+            color: blue;
+            height: 10%;
+            font-size: larger;
+            font-weight: 550;
+            padding: 10px 0;
+        }
+
+        .main
+        {
+            background: url("../images/football_ball.png") repeat-y right;
+        }
+
+        .main_menu
+        {
+            background-color: #f0e68c;
+            width: 250px;  
+        }
+
+        div.main div:first-child
+        {
+            padding-left: 20px;
+        }
+
+        div.main div:nth-child(2)
+        {
+            padding-left: 22%;
+        }
+        
+        .float_left
+        {
+            float: left;
+        }
+
+        .float_clear
+        {
+            clear: both;
+        }
+      
+
+        div.main div:nth-child(2) h2
+        {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+
+        [src*="foot"]
+        {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="top_bottom">
+        <p>
+            ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
+        </p>
+    </div>
+
+    <div class="main">        
+        <div class="main_menu float_left">
+            <b>Виды спорта:</b>
+                        <ul>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="конькобежный спорт" target="_blank">конькобежный спорт</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="биатлон" target="_blank">биатлон</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="футбол" target="_blank">футбол</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="стрельба из лука" target="_blank">стрельба из лука</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="прыжки в высоту" target="_blank">прыжки в высоту</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title=">прыжки в длину" target="_blank">прыжки в длину</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="конькобежный спорт" target="_blank">конькобежный спорт</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="биатлон" target="_blank">биатлон</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="футбол" target="_blank">футбол</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="стрельба из лука" target="_blank">стрельба из лука</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="прыжки в высоту" target="_blank">прыжки в высоту</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title=">прыжки в длину" target="_blank">прыжки в длину</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="конькобежный спорт" target="_blank">конькобежный спорт</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="биатлон" target="_blank">биатлон</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="футбол" target="_blank">футбол</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="стрельба из лука" target="_blank">стрельба из лука</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="прыжки в высоту" target="_blank">прыжки в высоту</a></li>
+                            <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title=">прыжки в длину" target="_blank">прыжки в длину</a></li>                        
+                        </ul>
+        </div>
+
+        <div>
+            <h2>
+                Футбол
+            </h2>
+            <img src="../images/football_picture.png" alt="картинка с кубком" class="float_left">
+            <span>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores ullam libero saepe rem fugit. Sapiente placeat assumenda soluta distinctio neque, tempore eum quidem debitis atque officiis consequuntur inventore corrupti.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo deserunt dolores, explicabo laborum unde earum modi repellat doloremque dolore maxime beatae error quis harum minima aut fugiat dolor ipsam!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laboriosam id temporibus quae explicabo illo laborum alias. Quidem nulla tempora non est, quibusdam repellat doloribus dolor culpa quis, pariatur exercitationem?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit in optio voluptate sit exercitationem aut quam nemo cupiditate quia itaque nisi necessitatibus maxime veniam, fugiat at beatae illo ratione?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo deserunt dolores, explicabo laborum unde earum modi repellat doloremque dolore maxime beatae error quis harum minima aut fugiat dolor ipsam!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laboriosam id temporibus quae explicabo illo laborum alias. Quidem nulla tempora non est, quibusdam repellat doloribus dolor culpa quis, pariatur exercitationem?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit in optio voluptate sit exercitationem aut quam nemo cupiditate quia itaque nisi necessitatibus maxime veniam, fugiat at beatae illo ratione?
+            </span>
+        </div>
+
+        <div class="float_clear"></div>
+    </div>
+        
+    <div class="top_bottom">
+       ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!
+    </div>
+    
+
+ 
+</body>
+</html>
