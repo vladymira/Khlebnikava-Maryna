@@ -41,8 +41,10 @@
        
         tbody td:first-child
         {
+            vertical-align: top;
             background-color: #f0e68c;
             width: 250px;
+            padding-bottom: 20px;    
         }
 
  
@@ -53,25 +55,16 @@
             padding-left: 20px;
      
         }
-    
-        tbody td:first-child
-        {
-            padding-bottom: 20px;            
-        }
+         
         /* all for <p> -------------------------*/ 
         tbody td p:first-child 
-        {
+        {            
             padding-top: 20px;
             padding-bottom: 20px;
             font-size: larger;
             font-weight: 550;      
         }
 
-        tbody td:first-child p:first-child
-        {
-            padding-left: 10px;
-        }
-        
         thead p, tfoot p
         {
             font-size: larger;
@@ -84,6 +77,11 @@
         }
         /*end all for <p> -------------------------*/
         
+        tbody td:first-child p:first-child
+        {
+            padding-left: 10px;
+        }
+
         tbody td:first-child ul
         {
             padding-left: 50px;
