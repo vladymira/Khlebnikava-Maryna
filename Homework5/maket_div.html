@@ -17,12 +17,9 @@
 
         .top_bottom
         {
-            background-color: #add8e6;
-            text-align: center;
+            background-color: #add8e6;            
             color: blue;
             height: 10%;
-            font-size: larger;
-            font-weight: 550;
             padding: 10px 0;
         }
 
@@ -34,19 +31,56 @@
         .main_menu
         {
             background-color: #f0e68c;
-            width: 250px;  
-        }
-
-        div.main div:first-child
-        {
-            padding-left: 20px;
+            width: 20%;            
         }
 
         div.main div:nth-child(2)
         {
-            padding-left: 22%;
+            margin-left: 21%;
         }
-        
+             
+        div.main div:first-child
+        {
+            padding-bottom: 20px;            
+        }
+
+        /* all for <p> -------------------------*/
+        div.main div p:first-child 
+        {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: larger;
+            font-weight: 550;    
+        }
+
+        div.main div:first-child p:first-child
+        {
+            padding-left: 10px;
+        }
+
+        .top_bottom p
+        {
+            font-size: larger;
+            font-weight: 530;      
+        }
+
+        .next_p
+        {
+            padding-top: 20px;            
+        }
+        /*end all for <p> -------------------------*/
+
+        div.main div:first-child ul
+        {
+            padding-left: 50px;
+        }
+      
+        .center_uppercase 
+        {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
         .float_left
         {
             float: left;
@@ -55,15 +89,7 @@
         .float_clear
         {
             clear: both;
-        }
-      
-
-        div.main div:nth-child(2) h2
-        {
-            text-align: center;
-            text-transform: uppercase;
-        }
-
+        }        
 
         [src*="foot"]
         {
@@ -75,14 +101,16 @@
 <body>
     
     <div class="top_bottom">
-        <p>
-            ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
+        <p class="center_uppercase">
+            Привет участникам соревнований!
         </p>
     </div>
 
-    <div class="main">        
+    <div class="main">          
         <div class="main_menu float_left">
-            <b>Виды спорта:</b>
+            <p>
+                Виды спорта:
+            </p>
                         <ul>
                             <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="конькобежный спорт" target="_blank">конькобежный спорт</a></li>
                             <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="биатлон" target="_blank">биатлон</a></li>
@@ -102,35 +130,38 @@
                             <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="стрельба из лука" target="_blank">стрельба из лука</a></li>
                             <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title="прыжки в высоту" target="_blank">прыжки в высоту</a></li>
                             <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82" title=">прыжки в длину" target="_blank">прыжки в длину</a></li>                        
-                        </ul>
+                        </ul>                    
         </div>
 
         <div>
-            <h2>
+            <p class="center_uppercase">
                 Футбол
-            </h2>
-            <img src="../images/football_picture.png" alt="картинка с кубком" class="float_left">
-            <span>
+            </p>
+
+            <img src="../images/football_picture.png" alt="картинка с кубком" class="float_left">    
+
+            <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores ullam libero saepe rem fugit. Sapiente placeat assumenda soluta distinctio neque, tempore eum quidem debitis atque officiis consequuntur inventore corrupti.
-                <br>
-                <br>
+            </p>
+        
+            <p class="next_p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo deserunt dolores, explicabo laborum unde earum modi repellat doloremque dolore maxime beatae error quis harum minima aut fugiat dolor ipsam!
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laboriosam id temporibus quae explicabo illo laborum alias. Quidem nulla tempora non est, quibusdam repellat doloribus dolor culpa quis, pariatur exercitationem?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit in optio voluptate sit exercitationem aut quam nemo cupiditate quia itaque nisi necessitatibus maxime veniam, fugiat at beatae illo ratione?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo deserunt dolores, explicabo laborum unde earum modi repellat doloremque dolore maxime beatae error quis harum minima aut fugiat dolor ipsam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit in optio voluptate sit exercitationem aut quam nemo cupiditate quia itaque nisi necessitatibus maxime veniam, fugiat at beatae illo ratione?                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo deserunt dolores, explicabo laborum unde earum modi repellat doloremque dolore maxime beatae error quis harum minima aut fugiat dolor ipsam!
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos laboriosam id temporibus quae explicabo illo laborum alias. Quidem nulla tempora non est, quibusdam repellat doloribus dolor culpa quis, pariatur exercitationem?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit in optio voluptate sit exercitationem aut quam nemo cupiditate quia itaque nisi necessitatibus maxime veniam, fugiat at beatae illo ratione?
-            </span>
+            </p>    
+            
         </div>
 
         <div class="float_clear"></div>
     </div>
         
     <div class="top_bottom">
-       ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!
+        <p class="center_uppercase">
+            Главное не победа, а участие!
+        </p>
     </div>
-    
 
- 
 </body>
 </html>
