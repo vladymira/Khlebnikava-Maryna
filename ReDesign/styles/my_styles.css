@@ -1,0 +1,41 @@
+h2 /* Как мы учим, Англия */
+{
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 60px;
+line-height: 120%;
+}
+
+
+/* mobile/pop32 semibold */
+h2 /* Как мы учим, Англия */
+{
+font-family: 'Montserrat',sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 120%;
+}
+/*--------------------------------Как мы учим------------------------------------------------------------------------------------------*/
+
+h2.mt36_icon_right
+{
+  margin-top: 36px;
+}
+
+h2.mt8
+{
+  margin-top: 8px;
+}
+
+h2.mt0
+{
+  margin-top: 0px;
+}
+
+/*----------------------------Англия-----------------------------------------------------------------------------------------------*/
+h2.mt120
+{
+  margin-top: 120px;
+}
