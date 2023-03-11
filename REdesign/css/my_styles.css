@@ -21,7 +21,7 @@ line-height: 120%;
 
 h2.mt36_icon_right
 {
-  margin-top: 36px;
+  margin-top: 36px; /*-15px*/
 }
 
 h2.mt8
