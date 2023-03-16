@@ -1,0 +1,29 @@
+.header{
+    background-color: blueviolet;
+}
+
+.footer{
+    background-color: rgb(168, 50, 109);
+}
+
+.wrap{
+    background-color: blue;
+    display: flex;
+    
+}
+
+.menu{
+    background-color: rgb(228, 207, 22);
+    width: 200px;
+    height: 300px;
+}
+
+.content{
+    background-color: rgb(109, 96, 90);
+}
+
+.banner{
+    background-color: rgb(49, 226, 43);
+    width: 200px;
+    height: 300px;
+}
