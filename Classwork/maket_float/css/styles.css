@@ -1,5 +1,7 @@
 .header{
     background-color: blueviolet;
+    color: azure;
+    text-align: center;
 }
 
 .footer{
@@ -7,36 +9,35 @@
 }
 
 .wrap{
-    /* background-color: blue; */
-    display: flex;
-    
+    background-color: blue;    
 }
 
 .menu{
     background-color: rgb(228, 207, 22);
     width: 33.3%;
-    height: 300px;
+    float: left;
 }
 
 .content{
     background-color: rgb(109, 96, 90);
-    width: 33.3%;
-    height: 300px;
+    margin-left: 33.4%;
+    margin-right: 33.4%;
 }
 
 .banner{
     background-color: rgb(49, 226, 43);
     width: 33.3%;
-    height: 300px;
+    float: right;
 }
 
-/* @media (max-width: 1000px) {
-.wrap{
-    display: block;
-}   
+/* .clearfix
+{
+    clear: both;
+} */
 
-.content{
-    background-color: rgb(188, 60, 192);
+.clearfix::after { 
+    content: ""; 
+    clear: both; 
+    display: block; 
 }
 
-     } */

@@ -1,3 +1,4 @@
 @import url("reset.css");
-@import url("style.css");
-
+@import url("styles.css");
+/* @import url("adaptiv.css") ; */
+ /* screen and (max-width: 800px);  */
