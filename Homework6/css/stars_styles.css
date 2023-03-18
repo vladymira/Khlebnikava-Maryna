@@ -20,11 +20,6 @@
  visibility: hidden;
 }
 
-.star0:hover ~ .star1
-{
-  visibility: visible;
-}
-
 .main:hover .star1
 {
   visibility: visible;
