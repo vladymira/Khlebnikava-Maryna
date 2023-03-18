@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  position: relative;
+  width: 75px;
+  height: 78px;
+}
+
+.left{
+  float: left;
+}
+
+.star1{
+ position: absolute;
+ top: 0px;
+ visibility: hidden;
+}
+
+.star0:hover ~ .star1
+{
+  visibility: visible;
+}
+
+.main:hover .star1
+{
+  visibility: visible;
+}
+
+div.container:hover ~ div .star1
+{
+  visibility: hidden;
+}
+ 
+
