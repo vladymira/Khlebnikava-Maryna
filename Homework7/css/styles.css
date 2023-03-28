@@ -1,0 +1,114 @@
+
+*
+{            
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top_bottom
+{
+    background-color: #add8e6;            
+    color: blue;
+    height: 20px;
+    padding: 10px 0;
+}
+
+.main
+{
+    display: flex;
+    
+}
+
+ .main_menu
+{
+    background-color: #f0e68c;
+    width: 20%;            
+}
+
+.main_content
+{
+    background: url("../../images/football_ball.png") repeat-y right;
+    width: 80%;    
+    padding-left: 10px;        
+}
+     
+div.main div:first-child
+{
+    padding-bottom: 20px;            
+}
+
+/* all for <p> -------------------------*/
+div.main div p:first-child 
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: larger;
+    font-weight: 550;    
+}
+
+div.main div:first-child p:first-child
+{
+    padding-left: 10px;
+}
+
+.top_bottom p
+{
+    font-size: larger;
+    font-weight: 530;      
+}
+
+.next_p
+{
+    padding-top: 20px;            
+}
+/*end all for <p> -------------------------*/
+
+div.main div:first-child ul
+{
+    padding-left: 50px;
+}
+
+.center_uppercase 
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.float_left
+{
+    float: left;
+}
+
+.float_clear
+{
+    clear: both;
+}        
+
+[src*="foot"]
+{
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 800px)
+{
+
+.main
+{
+    /* display: block; */
+    flex-direction: column;
+}
+
+.main_menu
+{    
+    width: 100%;     
+}
+
+.main_content
+{
+    width: 100%;  
+    padding-bottom: 10px;
+}
+ 
+}
+

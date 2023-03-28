@@ -6,101 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блочная верстка</title>
 
-    <style>
-
-        *
-        {            
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .top_bottom
-        {
-            background-color: #add8e6;            
-            color: blue;
-            height: 20px;
-            padding: 10px 0;
-        }
-
-        .main
-        {
-            background: url("../images/football_ball.png") repeat-y right;
-        }
-
-        .container
-        {
-            background: url("../images/football_menu.png") repeat-y left;
-        }
-        .main_menu
-        {
-            width: 250px; 
-            /* width: 20%;             */
-        }
-
-        div.main div:nth-child(2)
-        {
-            margin-left: 270px;
-            /* margin-left: 21%; */
-        }
-             
-        div.main div:first-child
-        {
-            padding-bottom: 20px;            
-        }
-
-        /* all for <p> -------------------------*/
-        div.main div p:first-child 
-        {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            font-size: larger;
-            font-weight: 550;    
-        }
-
-        div.main div:first-child p:first-child
-        {
-            padding-left: 10px;
-        }
-
-        .top_bottom p
-        {
-            font-size: larger;
-            font-weight: 530;      
-        }
-
-        .next_p
-        {
-            padding-top: 20px;            
-        }
-        /*end all for <p> -------------------------*/
-
-        div.main div:first-child ul
-        {
-            padding-left: 50px;
-        }
-      
-        .center_uppercase 
-        {
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        .float_left
-        {
-            float: left;
-        }
-
-        .float_clear
-        {
-            clear: both;
-        }        
-
-        [src*="foot"]
-        {
-            margin-right: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -111,9 +17,8 @@
         </p>
     </div>
 
-    <div class="main">     
-        <div class="container">     
-            <div class="main_menu float_left">
+    <div class="main">       
+            <div class="main_menu">
                 <p>
                     Виды спорта:
                 </p>
@@ -139,7 +44,7 @@
                             </ul>                                        
             </div>
         
-            <div>
+            <div class="main_content">
                 <p class="center_uppercase">
                     Футбол
                 </p>
@@ -160,8 +65,7 @@
             
             </div>
 
-            <div class="float_clear"></div>
-     </div>
+        </div>
     </div>
         
     <div class="top_bottom">

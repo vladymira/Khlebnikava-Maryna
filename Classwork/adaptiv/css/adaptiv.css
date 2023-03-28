@@ -3,6 +3,11 @@
         display: block;
     }   
     
+    .menu, .content, .banner
+    {
+        width:100%;
+    }
+    
     .content{
         background-color: rgb(188, 60, 192);
     }
