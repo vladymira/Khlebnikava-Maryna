@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с тэгом форма</title>
+</head>
+<body>
+<div>
+    <form method="GET" action="http://fe.it-academy.by/TestForm.php">
+       <h1>Registration form</h1>
+
+       <input type="text" name="Full Name" placeholder="Full Name"> <br><br>
+       <input type="email" name="Email" placeholder="Email"> <br><br>
+       <input type="password" name="Password" placeholder="Password"><br><br>
+       <input type="date" name="Date birthday" placeholder="mm/dd/yyyy"><br><br>
+       <select name="countries">
+           <option value="1"> Belarus</option>
+           <option value="2"> Russia</option>
+           <option value="3" selected> Ukraine</option>
+           <option value="4"> Moldova</option>
+       </select>
+       <br><br>
+
+       <input type="radio" name="gender" value="1">Female
+       <input type="radio" name="gender" value="2">Male
+       <input type="radio" name="gender" value="3" checked="checked">Unknown
+       <br><br>
+
+       <input type="checkbox" name="meal"> Low calorie
+       <br><br>
+       <input type="checkbox" name="salt"> Low salt
+       <br><br>
+
+       <input type="checkbox" name="confirm"> I accept terms
+       <br><br>
+       <br><br>
+       
+       <input type="submit" value="Register">
+
+    </form>
+
+</div>
+</body>
+</html>
