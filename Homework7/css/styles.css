@@ -106,8 +106,9 @@ div.main div:first-child ul
 
 .main_content
 {
-    width: 100%;  
+    width: calc(100% - 10px);  
     padding-bottom: 10px;
+    background-size: 5%;
 }
  
 }
