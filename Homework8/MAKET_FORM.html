@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макет публикации</title>
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  media="screen and (max-width: 1180px)" href="css/adaptiv.css">
+</head>
+
+<body>
+    <form method="GET" action="http://fe.it-academy.by/TestForm.php">
+        <div class="wrap">
+            <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+
+            <div>
+                <span class="float">Название статьи:</span> 
+                <div>
+                  <input type="text" name="art_caption">              
+                </div>
+            </div>
+
+            <div>
+                <span class="float"> Рубрика:</span> 
+                <div>
+                    <select type="select" name="type_rubric">
+                        <option value="1">компьютерная техника</option>
+                        <option value="2">графика и дизайн</option>
+                        <option value="3" selected>программирование</option>
+                    </select>              
+                </div>
+            </div>
+
+            <div>
+                <span class="float">Публикация:</span>
+                <div>
+                    <span class="block"><input type="radio" name="publ" value="1"><span>на сайте</span></span>
+                    <span class="block"><input type="radio" name="publ" value="2"><span>в журнале</span></span>
+                    <span class="block"><input type="radio" name="publ" value="3"><span>на сайте и в журнале</span></span>
+                </div>
+            </div>
+
+            <div>
+                Разрешить комментарии:
+                <input type="checkbox" name="comment" checked>
+            </div>
+
+            <div>
+                Текст статьи:
+                <textarea name="main_content"></textarea>
+            </div>
+
+            <input type="submit" value="Опубликовать"></input>
+
+           
+        </div>
+    </form>
+</body>
+
+</html>

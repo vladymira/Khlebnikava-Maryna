@@ -1,0 +1,42 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap
+{
+    border: double rgb(179, 0, 255);
+   
+}
+
+span+div
+{
+    margin-left: 0px;
+} 
+textarea
+{
+    display: block;
+}
+
+.float
+{
+   float: none;
+}
+
+.block
+{
+    display: block;
+}
+
+/* [type="radio"]
+{
+   margin-left: 0px;
+} */
+
+[type="submit"]
+{
+   margin-top: 10px;
+}
+

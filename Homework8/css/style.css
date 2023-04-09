@@ -1,0 +1,55 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrap
+{
+    border: double red;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.wrap p:first-of-type
+{
+    margin-top: 10px;
+    margin-left: -5px;
+    margin-bottom: 10px;
+}
+
+span+div
+{
+    margin-left: 200px;
+}
+
+textarea
+{
+    display: block;
+    width: 100%;
+}
+
+.float
+{
+   float: left;
+}
+
+[type="text"]
+{
+    width: 100%;
+}
+
+[type="submit"]
+{
+   margin-top: 10px;
+}
+
+.block
+{
+    display: inline
+}
+
+span span
+{
+   vertical-align: 2px;
+}

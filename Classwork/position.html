@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent {
+            width: 200px;
+            height: 200px;
+            background: rgb(73, 214, 186);
+            margin: 50px;
+            position: relative;
+        }
+
+        .child {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+
+        .child:first-child {
+            background: red;
+            left: 20px;
+            top: 20px;
+        }
+
+        .child:nth-child(2) {
+            background: green;
+            left: 40px;
+            top: 40px;
+        }
+
+        .child:last-child {
+            background: blue;
+            left: 60px;
+            top: 60px;
+        }
+
+        .shadow {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: rgb(0 0 0 / 0.5);
+        }
+
+        .modal {
+            top: calc(50% - 200px);
+            left: calc(50% - 200px);
+            width: 400px;
+            height: 400px;
+            background: #fff;
+            position: absolute;
+            /* margin-top: -200px;
+            margin-left: -200px; */
+        }
+
+        li:first-child{
+            background-color: blueviolet;
+        }
+        li:first-child:hover span:last-child{
+            background-color: chartreuse;
+        }
+        p:hover ~ h1:nth-of-type(1){
+            background-color: darkorange;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+    <!-- <div class="shadow">
+        <div class="modal">
+
+        </div>
+    </div> -->
+
+   
+        <p>1</p>
+        <strong>2</strong>
+        <em>3</em>
+        <h1>4</h1>
+        <p>5</p>
+        <h1>10</h1>
+
+
+
+</body>
+
+</html>
