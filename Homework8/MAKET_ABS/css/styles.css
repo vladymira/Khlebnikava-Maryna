@@ -1,0 +1,61 @@
+.wrap
+{
+    position: relative;
+    background: greenyellow;
+    height: 400px;
+}
+
+.center
+{
+    /* display: inline-block; */
+    margin: auto;
+    border: solid 3px red;
+ 
+}
+img
+{
+    position: absolute;
+}
+
+[class^='down']
+{
+    z-index: 1;
+}
+
+
+.up
+{
+    z-index: 2;
+    left: 85px;
+    top: 45px;
+}
+.down1
+{
+    left: 5px;
+    top: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.down2
+{    
+    left: 217px;
+    top: -5px;
+    width: 200px;
+    height: 223px;
+}
+
+.down3
+{  
+    left: 117px;
+    top: 195px;
+    width: 200px;
+    height: 200px;
+}
+
+.test
+{
+
+    border: solid 3px rgb(55, 0, 255);
+   
+}
