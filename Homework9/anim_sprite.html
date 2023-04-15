@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация спрайта</title>
+
+    <style>
+
+        @keyframes fire
+        {
+            from { background: url('../images/fire-animation-sprites-vector-7566593.jpg') 0 0; }
+            to { background: url('../images/fire-animation-sprites-vector-7566593.jpg') -900px 0; }
+        }
+        
+        @keyframes text
+        {
+            from { color: rgb(243, 129, 63);  }
+            25% { color: orange; }
+            50% { color: rgb(241, 241, 46); }
+            to { color: rgb(236, 135, 19); }
+        }
+
+        .anim1
+        {
+            width: 111px;
+            height: 334px;
+            animation: fire 1s steps(8) infinite;
+            margin:auto;
+        }
+        .anim2
+        {
+            animation: text 5s steps(15) infinite;
+            text-align: center;    
+        }
+        </style>
+</head>
+
+<body>  
+    <h1 class='anim2'> Анимация спрайта</h1> 
+    <div>
+        <div class='anim1'></div>
+    </div>
+    
+</body>
+</html>
