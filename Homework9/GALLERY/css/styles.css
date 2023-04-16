@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container
+{
+    width: 580px;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+a {
+    display: block;
+}
+

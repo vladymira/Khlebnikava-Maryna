@@ -1,0 +1,88 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.top_bottom
+{
+    background-color: #add8e6;            
+    color: blue;
+    height: 40px;
+    padding: 10px 0;
+}
+
+.main
+{
+    display: flex;
+  
+}
+
+.main_menu
+{
+    width: 250px; 
+    background-color: #f0e78d;
+}
+
+.content
+{
+    flex: 1;
+    padding-left: 20px;
+    background: url("../../../images/football_ball.png") repeat-y right;
+}
+     
+div.main div:first-child
+{
+    padding-bottom: 20px;            
+}
+
+/* all for <p> -------------------------*/
+div.main div p:first-child 
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: larger;
+    font-weight: 550;    
+}
+
+div.main div:first-child p:first-child
+{
+    padding-left: 10px;
+}
+
+.top_bottom p
+{
+    font-size: larger;
+    font-weight: 530;      
+}
+
+.next_p
+{
+    padding-top: 20px;            
+}
+/*end all for <p> -------------------------*/
+
+div.main div:first-child ul
+{
+    padding-left: 50px;
+}
+
+.center_uppercase 
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.float_left
+{
+    float: left;
+}
+
+     
+
+[src*="foot"]
+{
+    margin-right: 20px;
+}

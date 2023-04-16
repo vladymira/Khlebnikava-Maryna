@@ -1,0 +1,50 @@
+.main
+{
+    flex-direction: column-reverse;
+}
+.top_bottom
+{
+    display: none;
+}
+
+.float_left
+{
+    float: none;
+}
+.content
+{
+    background: none;
+    padding-left: 0px;
+}
+
+.main_menu
+{
+    background: none;
+    width: 100%;
+}
+
+img
+{
+    width: 100%;
+}
+
+div.main div:first-child ul
+{
+   list-style: none;
+   width: 100%;
+   padding-left: 0px;
+}
+
+li 
+{
+  display: inline;
+}
+
+div.main div:first-child p:first-child
+{
+    padding-left: 0;
+}
+img ~ img
+{
+    display: none;
+}
