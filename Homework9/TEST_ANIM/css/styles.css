@@ -20,14 +20,16 @@
 
 .wrap:hover .star polygon
 {     
-  fill: cornflowerblue
+  fill: cornflowerblue; 
 }
 
+.wrap:hover .star 
+{
+ margin-left: 500px;
+}
 
 .wrap:hover .text
 {   
-  transform: scale(1.5,1.5); 
-  transform: rotate(360deg);
   width: 700px;
 }
 
@@ -45,13 +47,21 @@ i
   color: red;
 }
 
-.star
+@keyframes star
 {
-animation: star 3s infinite;
+  from {margin-left: -100px;} 
+  to {margin-left: 500px;}
+
+}
+
+
+.star{
+  transition-property: margin-left;
+  transition-duration: 5s;    
 }
 
 .star polygon{
-  transition-property: fill;
+  transition-property: fill, margin-left;
   transition-duration: 2s;    
 }
 
@@ -72,16 +82,11 @@ animation: star 3s infinite;
   to { color: rgb(59, 19, 236); }  
 }
 
-@keyframes star
-{
-  from {margin-left: -100px;} 
-  to {margin-left: 500px;}
 
-}
 
 i
 {
-  animation: bugs 15s  infinite;
+  animation: bugs 3s  infinite;
 }
 
 
