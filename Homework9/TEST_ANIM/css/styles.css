@@ -1,0 +1,95 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 12px; */
+}
+
+.wrap
+{
+ display: flex;
+ flex-direction: column;
+ background-color: antiquewhite;
+}
+
+.wrap:hover .star 
+{   
+  transform: rotate(-180deg);   
+}
+
+.wrap:hover .star polygon
+{     
+  fill: cornflowerblue
+}
+
+
+.wrap:hover .text
+{   
+  transform: scale(1.5,1.5); 
+  transform: rotate(360deg);
+  width: 700px;
+}
+
+
+.wrap div
+{
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+i
+{
+  margin-top: 50px;
+  font-size: large;
+  color: red;
+}
+
+.star
+{
+animation: star 3s infinite;
+}
+
+.star polygon{
+  transition-property: fill;
+  transition-duration: 2s;    
+}
+
+.text
+{  
+  width: 500px;
+  border: solid green 5px;
+  transition-property: width;
+  transition-duration: 2s;  
+}
+
+@keyframes bugs{
+  0%   {opacity:0}
+  50%  {opacity:1}
+  100% {opacity:0}
+
+  from { color: rgb(192, 35, 35);  }  
+  to { color: rgb(59, 19, 236); }  
+}
+
+@keyframes star
+{
+  from {margin-left: -100px;} 
+  to {margin-left: 500px;}
+
+}
+
+i
+{
+  animation: bugs 15s  infinite;
+}
+
+
+@keyframes rotate {
+  100% {transform: rotate(360deg);}
+}
+
+.star2
+{
+  animation: rotate 15s  infinite;
+}
