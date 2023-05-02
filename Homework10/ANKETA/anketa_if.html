@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета с if</title>    
+</head>
+
+<body>
+    <script>
+
+    var age = 0;
+    var gender_str = '';
+    var pens_str = '';
+
+
+    var last_name = prompt('Введите вашу фамилию:');  
+    var first_name = prompt('Введите вашу имя:');  
+    var sur_name = prompt('Введите вашу отчество:');  
+
+    while (isNaN(age) || age <=0) {
+           age = prompt('Введите ваш возраст в годах:'); 
+        }
+
+    var gender = confirm("Ваш пол мужской?");
+
+
+    if (last_name == null) 
+       last_name = '';
+
+    if (first_name == null) 
+       first_name = '';
+
+    if (sur_name == null) 
+       sur_name = '';
+
+    if ((gender && age >= 63) || (!gender && age >= 58))
+      pens_str = 'да';
+    else  
+      pens_str = 'нет';
+    
+    if (gender) 
+      gender_str = 'мужской';
+    else 
+      gender_str = 'женский';
+
+    var result = `
+             ваше ФИО : ${last_name + ' ' + first_name + ' ' + sur_name}
+             ваш возраст в годах : ${age}
+             ваш возраст в днях : ${age*365}
+             через 5 лет вам будет : ${parseInt(age)+5}
+             ваш пол : ${gender_str}
+             вы на пенсии : ${pens_str} 
+        `
+
+    alert(result) ;     
+
+    </script>
+
+</body>
+</html>
