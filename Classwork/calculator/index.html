@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+
+<body>
+ 
+<input type='button' value='1' onclick='getNum(1)'>
+<br>
+<input type='button' value='2' onclick='getNum(2)'>
+<br>
+<input type='button' value='3' onclick='getNum(3)'>
+<br>
+<input type='button' value='4' onclick='getNum(4)'>
+<br>
+<input type='button' value='5' onclick='getNum(5)'>
+<br>
+<input type='button' value='6' onclick='getNum(6)'>
+<br>
+<input type='button' value='7' onclick='getNum(7)'>
+<br>
+<input type='button' value='8' onclick='getNum(8)'>
+<br>
+<input type='button' value='9' onclick='getNum(9)'>
+<br>
+<input type='button' value='0' onclick='getNum(0)'>
+<br>
+<input type='button' value='+' onclick='getSign("+")'>
+<br>
+<input type='button' value='-' onclick='getSign("-")'>
+<br>
+<input type='button' value='*' onclick='getSign("*")'>
+<br>
+<input type='button' value='/' onclick='getSign("/")'>
+<br>
+
+<input type='button' value='=' onclick='getResult()'>
+<br>
+<br>
+
+<input type='button' value='clear' onclick='clear_all()'>
+<br>
+
+
+<script>
+    var x = null;
+    var y = null;
+    var sign ='';
+
+    function getNum(num)
+    {
+       if (x === null) 
+       { x = num;}
+       else
+       { y = num;}
+    }
+
+    function getSign(l_sign)
+    {
+       if (l_sign !== null && l_sign !== '') 
+       { sign = l_sign;}
+    }
+
+    function getResult()
+    {
+       switch(sign)
+       {
+           case '+' : console.log(x+y) ; break;
+           case '-' : console.log(x-y) ; break;
+           case '*' : console.log(x*y) ; break;
+           case '/' : console.log(x/y) ; break;
+       }
+    }
+
+    function clear_all()
+    {
+        x = null;
+        y = null;
+        sign ='';
+
+        alert('Переменные очищены!');
+    }
+
+
+</script>
+</body>
+</html>
