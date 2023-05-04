@@ -12,11 +12,25 @@
 
     var age = 0;
 
+    ///
     var last_name = prompt('Введите вашу фамилию:');  
-    var first_name = prompt('Введите вашу имя:');  
-    var sur_name = prompt('Введите вашу отчество:');  
+    while (!valid_FIO(last_name)) {                  
+            last_name = prompt('Введите корректно вашу фамилию:'); 
+        }
 
-    while (isNaN(age) || age<=0) {
+    var first_name = prompt('Введите ваше имя:');  
+    while (!valid_FIO(first_name)) {                  
+            first_name = prompt('Введите корректно ваше имя:'); 
+        }
+
+    var sur_name = prompt('Введите ваше отчество:');  
+    while (!valid_FIO(sur_name)) {      
+            sur_name = prompt('Введите корректно ваше отчество:'); 
+        }
+///
+
+
+    while (isNaN(age) || age<=0 || age > 120) {
            age = prompt('Введите ваш возраст в годах:'); 
         }
 
@@ -36,6 +50,14 @@
         `
 
     alert(result) ;     
+
+    function valid_FIO(fio_part)
+    {
+     if (fio_part === null || fio_part.trim() === ''|| !isNaN(fio_part))
+       return false;
+     else
+       return true;   
+      }
 
     </script>
 
