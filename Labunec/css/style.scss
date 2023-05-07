@@ -7,6 +7,7 @@
 $fontNK90: 'NK90', Regular;
 $fontGilroy: 'Gilroy', Sans Serif;
 $backcolorGreen: #94C31F;
+$colorBlack: #000;
 
 body {
     height: 10000px;
@@ -19,8 +20,7 @@ body {
     width: 1280px;
     margin: 0 auto;
 
-    &.container-slider
-    {
+    &.container-slider {
         width: 1340px;
     }
 }
@@ -49,8 +49,7 @@ body {
     color: $backcolorGreen;
 }
 
-.slider_title
-{
+.slider_title {
     font-size: 30px;
 }
 
@@ -179,7 +178,7 @@ li {
 
         text-align: center;
         letter-spacing: 0.1em;
-        color: #000;
+        color: $colorBlack;
     }
 }
 
@@ -188,7 +187,7 @@ li {
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
-    color: #000000;
+    color: $colorBlack;
     padding: 18px 15px;
 
     .swiper-slide-thumb-active & {
@@ -250,33 +249,289 @@ li {
     }
 }
 
-.swiper-button-next{
+.swiper-button-next {
     background: url('../img/Ellipse.png') no-repeat;
-    width: 125px!important;
-    height: 100px!important;
+    width: 125px;
+    height: 100px;
     background-size: contain;
-    top: var(--swiper-navigation-top-offset,45%) !important;
+    top: var(--swiper-navigation-top-offset, 45%) !important;
     right: var(--swiper-navigation-sides-offset, -25px) !important;
     background-position-x: 27px;
 
-    &::after
-    {
-        font-weight:bolder!important;
+    &::after {
+        font-weight: bolder;
     }
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
     background: url('../img/Ellipse.png') no-repeat;
-    width: 125px!important;
-    height: 100px!important;
+    width: 125px;
+    height: 100px;
     background-size: contain;
-    top: var(--swiper-navigation-top-offset,43%) !important;
+    top: var(--swiper-navigation-top-offset, 43%) !important;
     left: var(--swiper-navigation-sides-offset, -25px) !important;
     background-position-x: -27px;
 
-    &::afters
-    {
-        font-weight:bolder!important;
+    &::afters {
+        font-weight: bolder;
     }
 }
 
+.problem {
+    margin-top: 85px;
+    margin-bottom: 150px;
+
+    ul.problem_header {
+        padding-top: 39px;
+        display: flex;
+        text-align: center;
+
+        li {
+            width: 454px;
+            height: 75px;
+
+            font-family: $fontGilroy;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+            color: #C6C6C6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li.ui-state-active {
+            background: #94C31F;
+            border-radius: 8px;
+            font-family: $fontGilroy;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFFFFF;
+            border-color: transparent;
+        }
+    }
+
+
+
+}
+
+.problem_content {
+    height: 362px;
+    justify-content: space-between;
+    padding-top: 26px;
+
+    ul {
+        height: 362px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-left: 34px;
+
+    }
+
+    li {
+        background: url('../img/check.png') no-repeat;
+        background-size: 36px 29px;
+        padding-left: 65px;
+        height: 60px;
+    }
+
+    .left {
+        width: 880px;
+
+    }
+
+    .right {
+        background: url('../img/ball_with_boy.png') no-repeat;
+        /* background-size: 668px; */
+        width: 398px;
+        height: 362px;
+        position: relative;
+
+        .circle {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: 170px;
+            bottom: -30px;
+        }
+
+        .triangle {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 187px;
+            bottom: -18px;
+        }
+
+        .line {
+            position: absolute;
+            width: 68.55px;
+            height: 66.09px;
+            left: 120px;
+            bottom: -97px;
+        }
+
+        span {
+            position: absolute;
+            width: 97px;
+            height: 28px;
+            left: 43px;
+            bottom: -74px;
+
+            font-family: $fontGilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            color: $colorBlack;
+            opacity: 0.4;
+        }
+    }
+
+}
+
+.block1 {
+    min-height: 273px;
+    background: url('../img/green_background.png') no-repeat;
+    background-position: 0px 22%;
+    font-family: $fontNK90;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    padding: 20px 150px;
+    text-align: center;
+
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    margin-bottom: 43px;
+}
+
+.block2 {
+    .group1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 43px;
+
+        .subgroup1 {
+            width: 900px;
+
+            .group2 {
+                display: flex;
+                flex-direction: column;
+
+                .group3 {
+                    height: 335px;
+                    background: url('../img/cross.png') no-repeat bottom right;
+                    // background-position: 0 80%;
+                    // background-size: 80%;
+                    margin-bottom: 43px;
+
+                    p {
+                        padding-left: 28px;
+                        padding-right: 163px;
+                        padding-top: 90px;
+                        padding-bottom: 65px;
+
+                        font-family: $fontGilroy;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 30px;
+
+                        color: $colorBlack
+                    }
+                }
+
+
+            }
+        }
+
+        .subgroup2 {
+            height: 651px;
+            width: 335px;
+
+            background: url('../img/mat.png') no-repeat bottom;
+
+            font-family: $fontGilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+
+            color: $colorBlack;
+
+            box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+            p {
+                padding-left: 24px;
+                padding-right: 24px;
+                padding-top: 64px;
+                padding-bottom: 376px;
+            }
+        }
+    }
+
+    .group4 {
+
+        width: 900px;
+        justify-content: space-between;
+
+        div {
+            width: 272px;
+            height: 273px;
+            background: url('../img/green_background.png') no-repeat bottom;
+            background-size: cover;
+            padding: 25px;
+
+            font-family: $fontGilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+
+            color: #FFFFFF;
+        }
+    }
+
+
+}
+
+.block3 {
+    min-height: 335px;
+
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    background-image: url('../img/ball_with_girl.png'), linear-gradient(180deg, #FFFFFF 0%, #F9F9F9 100%);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    padding-top: 64px;
+    padding-left: 28px;
+    padding-right: 584px;
+    padding-bottom: 141px;
+
+    p {
+        font-family: $fontGilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+
+        color: #000000;
+    }
+
+}
+
+.radius {
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
