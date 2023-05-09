@@ -1,0 +1,30 @@
+.container {
+    // width: 320px;
+    margin: 0 auto;
+
+    &.container-slider {
+        width: 320px;
+    }
+
+    &.container-footer {
+        width: 320px;
+    }
+}
+
+.info {
+    height: 668px;
+    background-color: $backcolorGreen;
+    justify-content: space-between;
+
+    .left {
+        background: url('../img/green_background.png') no-repeat;
+        /* background-size: 1006px 668px; */
+        background-size: cover;
+        height: 668px;
+        flex-basis: 1042px;
+    }
+
+    .right {
+        display: none;
+    }
+}
