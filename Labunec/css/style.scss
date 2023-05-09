@@ -1,14 +1,11 @@
+@import 'parameters.scss';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$fontNK90: 'NK90', Regular;
-$fontGilroy: 'Gilroy', Sans Serif;
-$backcolorGreen: #94C31F;
-$colorBlack: #000;
-$colorWhite: #FFF;
 
 body {
     // height: 10000px;
@@ -62,6 +59,10 @@ body {
 
 .slider_title {
     font-size: 30px;
+}
+
+.mobile_only {
+    display: none;
 }
 
 a {
@@ -150,16 +151,11 @@ header {
             display: flex;
             flex-direction: column;
             position: absolute;
-            right:0;
+            right: 0;
             top: 45px;
             background-color: $colorWhite;
             border: $backcolorGreen 1px solid;
             z-index: 1;
-
-            // @media screen and (min-width: 980px) and (max-width: 1280px) {
-            //     right: 0;
-            //     left: inherit; 
-            // }
 
             li {
                 min-width: 150px;
@@ -206,7 +202,7 @@ header {
     margin-bottom: 85px;
 
     @media screen and (min-width: 980px) and (max-width: 1280px) {
-        margin-top: -650px; 
+        margin-top: -650px;
     }
 
     .container {
@@ -321,6 +317,11 @@ header {
     }
 }
 
+.mySwiper2 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
 .swiper-button-next {
     background: url('../img/Ellipse.png') no-repeat;
     width: 125px;
@@ -340,7 +341,7 @@ header {
     width: 125px;
     height: 100px;
     background-size: contain;
-    top: var(--swiper-navigation-top-offset, 43%) !important;
+    top: var(--swiper-navigation-top-offset, 45%) !important;
     left: var(--swiper-navigation-sides-offset, -25px) !important;
     background-position-x: -27px;
 
@@ -350,7 +351,7 @@ header {
 }
 
 .problem {
-    margin-top: 85px;
+    margin-top: 78px;
     margin-bottom: 150px;
 
     ul.problem_header {
@@ -494,7 +495,7 @@ header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            
+
             .subgroup1 {
                 max-width: 900px;
 
@@ -551,7 +552,7 @@ header {
                     padding-left: 24px;
                     padding-right: 24px;
                     padding-top: 64px;
-                   
+
                 }
             }
         }

@@ -40,6 +40,9 @@ body {
 .slider_title {
   font-size: 30px; }
 
+.mobile_only {
+  display: none; }
+
 a {
   color: inherit;
   text-decoration: none; }
@@ -220,6 +223,10 @@ header {
     color: #FFFFFF;
     border-color: transparent; }
 
+.mySwiper2 {
+  padding-top: 7px;
+  padding-bottom: 7px; }
+
 .swiper-button-next {
   background: url("../img/Ellipse.png") no-repeat;
   width: 125px;
@@ -236,14 +243,14 @@ header {
   width: 125px;
   height: 100px;
   background-size: contain;
-  top: var(--swiper-navigation-top-offset, 43%) !important;
+  top: var(--swiper-navigation-top-offset, 45%) !important;
   left: var(--swiper-navigation-sides-offset, -25px) !important;
   background-position-x: -27px; }
   .swiper-button-prev::afters {
     font-weight: bolder; }
 
 .problem {
-  margin-top: 85px;
+  margin-top: 78px;
   margin-bottom: 150px; }
   .problem ul.problem_header {
     padding-top: 39px;
