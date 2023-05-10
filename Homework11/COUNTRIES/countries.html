@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страны</title>
+
+    <script src="scripts/countries.js"></script>
+
+    <style>
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <h1>Cтраны</h1>
+        <button type="button" onclick="addNewCountry()">Ввод информации о стране</button>
+
+        <button type="button" onclick="getInfoCountry()">Получение информации о стране</button>
+
+        <button type="button" onclick="getListCountries()">Перечень всех стран</button>
+
+        <button type="button" onclick="delCountry()">Удаление информации о стране</button>
+    </div>
+
+
+    <script>
+        function addNewCountry() {
+            var country_name = prompt('Введите название страны: ');
+
+            var country_capital = prompt('Введите название столицы страны: ');
+
+            if (valid_data(country_name) && valid_data(country_capital))
+                addCountry(country_name, country_capital);
+            else
+                alert("Неправильно введены данные!")
+
+
+        }
+
+        function getInfoCountry() {
+            var country_name = prompt('Введите название страны: ');
+
+            if (valid_data(country_name))
+                console.log(getCountryInfo(country_name));
+            else
+                alert("Неправильно введены данные!")
+
+        }
+
+        function getListCountries() {
+            console.log(listCountrys());
+
+        }
+
+        function delCountry() {
+            var country_name = prompt('Введите название страны: ');
+
+            if (valid_data(country_name))
+                deleteCountry(country_name);
+            else
+                alert("Неправильно введены данные!")
+
+        }
+
+
+        //////////////////////////
+        function valid_data(name) {
+            if (name === null || name.trim() === '' || !isNaN(name))
+                return false;
+            else
+                return true;
+        }
+
+    </script>
+</body>
+
+</html>
