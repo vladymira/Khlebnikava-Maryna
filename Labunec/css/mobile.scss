@@ -84,6 +84,8 @@ header .dropdown_content ul {
 
 .info_content {
 
+    margin-bottom: 40px;
+
     .title {
         font-size: 20px;
         line-height: 24px;
@@ -127,17 +129,18 @@ header .dropdown_content ul {
     }
 }
 
+.slider_title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 24px;
+}
 
 .mySwiper2 {
     padding-top: 15px;
     padding-bottom: 15px;
 
-    .slider_title {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        margin-bottom: 20px;
-    }
+
 
     .slider-content {
         display: flex;
@@ -192,6 +195,9 @@ header .dropdown_content ul {
 }
 
 .problem {
+    margin-bottom: 63px;
+    margin-top: 43px;
+
     .ui-tabs-panel {
         display: block !important;
     }
@@ -239,6 +245,8 @@ header .dropdown_content ul {
 
     .problem_content {
 
+        padding-top: 16px;
+
         ul {
             height: auto;
             padding: 10px;
@@ -253,8 +261,235 @@ header .dropdown_content ul {
             text-align: center;
             background-position-x: center;
             background-position-y: 10px;
-            margin-bottom: 75px;
+            margin-bottom: 27px;
+            height: auto;
+
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+
+        }
+
+        .right {
+            margin: 10px auto;
+            background-size: contain;
+            width: calc(100% - 76px);
+
+
+            .circle {
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                left: calc(50% - 18px);
+                bottom: 36px;
+            }
+
+            .triangle {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                left: calc(50% - 10px);
+                bottom: 43px;
+            }
 
         }
     }
 }
+
+.special {
+    margin-bottom: 40px;
+
+    .block1 {
+        margin-bottom: 19px;
+        min-height: auto;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        padding: 10px;
+
+    }
+
+
+    .block2 {
+        margin-bottom: 19px;
+
+        .group1 {
+            .subgroup1 {
+                .group2 {
+                    .group3 {
+
+                        background-image: none;
+                        height: auto;
+                        margin-bottom: 19px;
+
+                        p {
+                            padding: 20px;
+
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+                    }
+
+                    .group4 {
+                        margin-bottom: 19px;
+                        align-items: stretch;
+
+                        div:nth-of-type(3) {
+                            display: none;
+                        }
+
+                        div {
+
+                            display: flex;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                            flex-basis: 50%;
+                            height: auto;
+                            padding: 20px;
+                            padding-top: 29px;
+
+                        }
+                    }
+                }
+            }
+
+            .subgroup2 {
+                background-image: none;
+                padding: 20px;
+                margin-bottom: 19px;
+
+                p {
+                    padding: 0;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+
+            }
+
+            .subgroup3 {
+                &.radius {
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                    background: url('../img/green_background.png') no-repeat bottom;
+                    background-size: cover;
+                    padding: 30px;
+
+                    font-family: $fontGilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .block3 {
+        background-image: none;
+        padding: 20px;
+        min-height: auto;
+
+        p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+}
+
+footer {
+    .title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 17px;
+    }
+
+    .copy {
+
+        font-size: 10px;
+        line-height: 24px;
+        margin-bottom: 21px;
+    }
+
+
+    .container ul {
+        flex-direction: column;
+        flex-basis: 100%;
+
+        li {
+            font-size: 13px;
+            line-height: 15px;
+            align-items: center;
+
+            p:first-of-type {
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+        }
+
+        .insta {
+            width: 22px;
+            height: 22px;
+            margin-right: 27px;
+        }
+
+        .twitter {
+            width: 22px;
+            height: 18px;
+            margin-right: 21px;
+            margin-top: 0px;
+        }
+
+        .facebook {
+            width: 13px;
+            height: 22px;
+        }
+    }
+}
+
+// .block2 .group1 .subgroup1 .group2 .group3 {
+//     background-image: none;
+
+//     p {
+//         font-weight: 600;
+//         font-size: 14px;
+//         line-height: 17px;
+//     }
+// }
+
+// .block2 .group4 {
+//     div:nth-of-type(3) {
+//         display: none;
+//     }
+
+//     div {
+//         font-weight: 600;
+//         font-size: 14px;
+//         line-height: 17px;
+
+//     }
+
+// }
+
+
+
+// .block2 .group1 .subgroup2 {
+//     background-image: none;
+
+//     p {
+//         font-weight: 600;
+//         font-size: 14px;
+//         line-height: 17px;
+//     }
+
+
+
+// }

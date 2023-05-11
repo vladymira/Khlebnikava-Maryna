@@ -136,11 +136,21 @@ header {
     height: 668px; }
 
 .info_content {
-  margin-top: -565px;
-  margin-bottom: 85px; }
+  margin-top: -668px;
+  margin-bottom: 65px;
+  height: 668px; }
   @media screen and (min-width: 980px) and (max-width: 1280px) {
-    .info_content {
-      margin-top: -650px; } }
+    .info_content .title {
+      font-size: 50x;
+      line-height: 61px; }
+    .info_content .description {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 86px; }
+    .info_content .slogan {
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 66px; } }
   .info_content .container {
     padding-right: 580px; }
   .info_content .title {
