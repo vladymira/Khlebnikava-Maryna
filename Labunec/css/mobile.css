@@ -1,289 +1,52 @@
-.mobile_only {
-  display: block; }
+/*
+Error: File to import not found or unreadable: settings.scss.
+       Load path: D:/MarynaKhlebnikava/Labunec/css
+        on line 1 of D:\MarynaKhlebnikava\Labunec\css\mobile.scss
 
-header .insta {
-  width: auto;
-  height: auto;
-  margin-right: 7px; }
-  header .insta img {
-    width: 10px;
-    height: 10px; }
-header .twitter {
-  width: auto;
-  height: auto;
-  margin-right: 7px;
-  margin-top: 0px; }
-  header .twitter img {
-    width: 10px;
-    height: 8px; }
-header .facebook {
-  width: auto;
-  height: auto; }
-  header .facebook img {
-    width: 7px;
-    height: 10px; }
-header .social {
-  flex-basis: 25%; }
-header .logo {
-  width: auto;
-  height: auto; }
-  header .logo img {
-    width: 69px;
-    height: 19px; }
-header .menu {
-  width: auto;
-  height: auto; }
-  header .menu img {
-    width: 20px;
-    height: 7.5px; }
+1: @import 'settings.scss';
+2: 
+3: .mobile_only {
+4:     display: block;
+5: }
+6: 
 
-header .dropdown_content ul {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 0;
-  top: 38px; }
-  header .dropdown_content ul li {
-    min-width: 130px;
-    height: 24px;
-    font-size: 13px;
-    line-height: 24px; }
-
-.info_content {
-  margin-bottom: 40px; }
-  .info_content .title {
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    margin-bottom: 40px; }
-  .info_content .description {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    margin-top: 51px; }
-  .info_content .slogan {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    position: relative;
-    margin-bottom: 145px; }
-    .info_content .slogan::after {
-      content: "";
-      background: url(../img/Arrow.svg) no-repeat;
-      position: absolute;
-      width: 37px;
-      height: 136px;
-      top: 37px;
-      right: 57px; }
-  .info_content .btn {
-    width: 182px;
-    height: 59px;
-    padding: 10px;
-    font-size: 13px;
-    line-height: 20px; }
-
-.slider_title {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 24px; }
-
-.mySwiper2 {
-  padding-top: 15px;
-  padding-bottom: 15px; }
-  .mySwiper2 .slider-content {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 14px; }
-    .mySwiper2 .slider-content .title {
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 20px;
-      margin-bottom: 33px;
-      padding-bottom: 0; }
-    .mySwiper2 .slider-content .inner {
-      justify-content: flex-start;
-      height: auto; }
-    .mySwiper2 .slider-content .description {
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 17px;
-      margin-bottom: 33px; }
-    .mySwiper2 .slider-content img {
-      width: 251px;
-      height: auto;
-      padding-bottom: 165px; }
-    .mySwiper2 .slider-content .btn {
-      display: none; }
-  .mySwiper2 .swiper-button-next {
-    background: none;
-    top: var(--swiper-navigation-top-offset, 85%) !important;
-    right: var(--swiper-navigation-sides-offset, -5px) !important; }
-  .mySwiper2 .swiper-button-prev {
-    background: none;
-    top: var(--swiper-navigation-top-offset, 85%) !important;
-    left: var(--swiper-navigation-sides-offset, -5px) !important; }
-
-.problem {
-  margin-bottom: 63px;
-  margin-top: 43px; }
-  .problem .ui-tabs-panel {
-    display: block !important; }
-  .problem ul.problem_header {
-    display: none; }
-  .problem .problem_title {
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    background: #94C31F;
-    border-radius: 8px;
-    font-family: "Gilroy", Sans Serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #FFFFFF;
-    border-color: transparent;
-    width: 211px;
-    padding: 14px 50px;
-    margin: auto;
-    margin-bottom: 29px; }
-  .problem #tabs-1 .right .line,
-  .problem #tabs-1 .right span {
-    display: none; }
-  .problem #tabs-2 .right,
-  .problem #tabs-3 .right {
-    display: none; }
-  .problem .problem_content {
-    padding-top: 16px; }
-    .problem .problem_content ul {
-      height: auto;
-      padding: 10px; }
-    .problem .problem_content li {
-      display: flex;
-      justify-content: center;
-      padding-top: 53px;
-      padding-left: 0;
-      text-align: center;
-      background-position-x: center;
-      background-position-y: 10px;
-      margin-bottom: 27px;
-      height: auto;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 17px; }
-    .problem .problem_content .right {
-      margin: 10px auto;
-      background-size: contain;
-      width: calc(100% - 76px); }
-      .problem .problem_content .right .circle {
-        position: absolute;
-        width: 36px;
-        height: 36px;
-        left: calc(50% - 18px);
-        bottom: 36px; }
-      .problem .problem_content .right .triangle {
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        left: calc(50% - 10px);
-        bottom: 43px; }
-
-.special {
-  margin-bottom: 40px; }
-  .special .block1 {
-    margin-bottom: 19px;
-    min-height: auto;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 1px;
-    padding: 10px; }
-  .special .block2 {
-    margin-bottom: 19px; }
-    .special .block2 .group1 .subgroup1 .group2 .group3 {
-      background-image: none;
-      height: auto;
-      margin-bottom: 19px; }
-      .special .block2 .group1 .subgroup1 .group2 .group3 p {
-        padding: 20px;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px; }
-    .special .block2 .group1 .subgroup1 .group2 .group4 {
-      margin-bottom: 19px;
-      align-items: stretch; }
-      .special .block2 .group1 .subgroup1 .group2 .group4 div:nth-of-type(3) {
-        display: none; }
-      .special .block2 .group1 .subgroup1 .group2 .group4 div {
-        display: flex;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        flex-basis: 50%;
-        height: auto;
-        padding: 20px;
-        padding-top: 29px; }
-    .special .block2 .group1 .subgroup2 {
-      background-image: none;
-      padding: 20px;
-      margin-bottom: 19px; }
-      .special .block2 .group1 .subgroup2 p {
-        padding: 0;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px; }
-    .special .block2 .group1 .subgroup3.radius {
-      max-width: 100%;
-      width: 100%;
-      height: auto;
-      background: url("../img/green_background.png") no-repeat bottom;
-      background-size: cover;
-      padding: 30px;
-      font-family: "Gilroy", Sans Serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 17px;
-      color: #FFFFFF; }
-  .special .block3 {
-    background-image: none;
-    padding: 20px;
-    min-height: auto; }
-    .special .block3 p {
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 17px; }
-
-footer .title {
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 17px; }
-footer .copy {
-  font-size: 10px;
-  line-height: 24px;
-  margin-bottom: 21px; }
-footer .container ul {
-  flex-direction: column;
-  flex-basis: 100%; }
-  footer .container ul li {
-    font-size: 13px;
-    line-height: 15px;
-    align-items: center; }
-    footer .container ul li p:first-of-type {
-      font-size: 15px;
-      line-height: 18px; }
-  footer .container ul .insta {
-    width: 22px;
-    height: 22px;
-    margin-right: 27px; }
-  footer .container ul .twitter {
-    width: 22px;
-    height: 18px;
-    margin-right: 21px;
-    margin-top: 0px; }
-  footer .container ul .facebook {
-    width: 13px;
-    height: 22px; }
-
-/*# sourceMappingURL=mobile.css.map */
+Backtrace:
+D:\MarynaKhlebnikava\Labunec\css\mobile.scss:1
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: settings.scss.\A        Load path: D:/MarynaKhlebnikava/Labunec/css\A         on line 1 of D:\MarynaKhlebnikava\Labunec\css\mobile.scss\A \A 1: @import 'settings.scss';\A 2: \A 3: .mobile_only {\A 4:     display: block;\A 5: }\A 6: "; }

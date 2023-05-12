@@ -1,4 +1,4 @@
-@import 'parameters.scss';
+@import 'settings.scss';
 
 * {
     margin: 0;
@@ -129,7 +129,7 @@ header {
         .dropdown_pict {
             padding: 10px;
             background-color: $colorWhite;
-            z-index: 2;
+            z-index: 0; //2
             position: relative;
 
             &:hover {
@@ -138,6 +138,7 @@ header {
 
                 &+.dropdown_content {
                     display: block;
+                    transition: all 1s ease-out 0.5s;
                 }
             }
         }
@@ -146,6 +147,7 @@ header {
     .dropdown_content {
 
         display: none;
+        z-index: 1;
 
         ul {
             display: flex;
@@ -155,7 +157,7 @@ header {
             top: 45px;
             background-color: $colorWhite;
             border: $backcolorGreen 1px solid;
-            z-index: 1;
+            z-index: 2; //1
 
             li {
                 min-width: 150px;

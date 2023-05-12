@@ -497,4 +497,88 @@ footer .map {
   position: relative;
   overflow: hidden; }
 
-/*# sourceMappingURL=style.css.map */
+.header .header_top {
+  margin-bottom: 29px; }
+.header .nav_main {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
+  margin-bottom: 50px; }
+  .header .nav_main ul li {
+    padding: 48px 39px;
+    font-family: "NK90", Regular;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #94C31F;
+    border-left: solid 1px;
+    border-color: linear-gradient(180deg, #F2F2F2 0%, #C4C4C4 51.04%, #F2F2F2 100%); }
+    .header .nav_main ul li.activ {
+      color: #FFF;
+      background: #94C31F;
+      box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25); }
+
+.title {
+  font-family: "NK90", Regular;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #94C31F;
+  margin-bottom: 105px; }
+
+.members {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 184px; }
+  .members .member {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px; }
+    .members .member:nth-child(even) {
+      flex-direction: row-reverse; }
+    .members .member .ava {
+      flex-basis: 30%;
+      width: 366px;
+      height: 366px;
+      position: relative; }
+      .members .member .ava::before {
+        content: "";
+        background: url(../img/member_mask.svg) no-repeat;
+        position: absolute;
+        width: 366px;
+        height: 366px;
+        top: 0;
+        right: 0;
+        z-index: -1; }
+    .members .member .radius {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F1F1F1 100%);
+      box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+      border-radius: 10px; }
+    .members .member .details {
+      flex-basis: 60%;
+      padding: 25px 30px 19px 57px; }
+      .members .member .details .initials {
+        font-family: 'NK90';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #94C31F;
+        margin-bottom: 7px; }
+      .members .member .details .position {
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 42px; }
+      .members .member .details .about {
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        color: #7E8085; }
+
+/*# sourceMappingURL=inner.css.map */
