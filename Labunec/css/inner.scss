@@ -1,5 +1,4 @@
 @import 'settings.scss';
-@import 'style.scss';
 
 $fontNK90: 'NK90', Regular;
 $fontGilroy: 'Gilroy', Sans Serif;
@@ -28,9 +27,12 @@ $colorWhite: #FFF;
                 line-height: 24px;
                 text-align: center;
                 color: $backcolorGreen;
-
-                border-left: solid 1px;
-                border-color: linear-gradient(180deg, #F2F2F2 0%, #C4C4C4 51.04%, #F2F2F2 100%);
+                background-image: url("../img/li_border.svg");
+                background-position-x: 100%;
+                background-position-y: 50%;
+                background-repeat: no-repeat;
+                // border-left: solid 1px;
+                // border-color: linear-gradient(180deg, #F2F2F2 0%, #C4C4C4 51.04%, #F2F2F2 100%);
 
                 &.activ {
                     color: $colorWhite;
@@ -67,6 +69,36 @@ $colorWhite: #FFF;
         &:nth-child(even) {
             flex-direction: row-reverse;
         }
+
+        .member_foto {
+            position: relative;
+            width: 386px;
+            height: 386px;
+
+            .foto {
+                background-image: url("../img/memberLab.png");
+                background-position: center;
+                width: 366px;
+                height: 366px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+            }
+
+            .mask {
+                background-color: $backcolorGreen;
+                width: 366px;
+                height: 366px;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
 
         .ava {
             flex-basis: 30%;

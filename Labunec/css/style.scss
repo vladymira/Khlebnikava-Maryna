@@ -129,14 +129,14 @@ header {
         .dropdown_pict {
             padding: 10px;
             background-color: $colorWhite;
-            z-index: 0; //2
+            z-index: 2;
             position: relative;
 
             &:hover {
                 border: solid $backcolorGreen;
                 border-width: 1px 1px 0px 1px;
 
-                &+.dropdown_content {
+                & .dropdown_content {
                     display: block;
                     transition: all 1s ease-out 0.5s;
                 }
@@ -147,17 +147,16 @@ header {
     .dropdown_content {
 
         display: none;
-        z-index: 1;
 
         ul {
             display: flex;
             flex-direction: column;
             position: absolute;
-            right: 0;
-            top: 45px;
+            right: 0px;
+            top: 41px;
             background-color: $colorWhite;
             border: $backcolorGreen 1px solid;
-            z-index: 2; //1
+            z-index: 1;
 
             li {
                 min-width: 150px;
@@ -208,7 +207,7 @@ header {
         // margin-top: -650px;
 
         .title {
-            font-size: 50x;
+            font-size: 50px;
             line-height: 61px;
         }
     
