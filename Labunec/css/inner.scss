@@ -18,9 +18,11 @@ $colorWhite: #FFF;
         margin-bottom: 50px;
 
         ul {
-
+            justify-content: center;
             li {
-                padding: 48px 39px;
+                padding-top: 48px;
+                padding-bottom: 48px;
+                flex-basis: 16.6%;
                 font-family: $fontNK90;
                 font-weight: 400;
                 font-size: 20px;
@@ -31,13 +33,18 @@ $colorWhite: #FFF;
                 background-position-x: 100%;
                 background-position-y: 50%;
                 background-repeat: no-repeat;
-                // border-left: solid 1px;
-                // border-color: linear-gradient(180deg, #F2F2F2 0%, #C4C4C4 51.04%, #F2F2F2 100%);
 
                 &.activ {
                     color: $colorWhite;
                     background: $backcolorGreen;
                     box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25);
+
+                    pointer-events: none;
+
+                }
+
+                &:last-child {
+                    background-image: none;
                 }
             }
         }
@@ -63,11 +70,17 @@ $colorWhite: #FFF;
     .member {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
         margin-bottom: 60px;
+
+        &:nth-child(odd) {
+            margin-right: 60px;
+        }
+
 
         &:nth-child(even) {
             flex-direction: row-reverse;
+            margin-left: 60px;
         }
 
         .member_foto {
@@ -76,15 +89,47 @@ $colorWhite: #FFF;
             height: 386px;
 
             .foto {
-                background-image: url("../img/memberLab.png");
                 background-position: center;
                 width: 366px;
                 height: 366px;
                 border-radius: 50%;
                 position: absolute;
                 bottom: 0;
-                right: 0;
                 z-index: 2;
+            }
+
+            .fotoLab {
+                background-image: url("../img/memberLab.png");
+                background-size: 95%;
+                right: 0;
+            }
+
+            .foto1 {
+                background-image: url("../img/member1.png");
+                background-size: 90%;
+                background-position: top center;
+                left: 0;
+            }
+
+            .foto2 {
+                background-image: url("../img/member2.png");
+                background-position: top center;
+                background-size: 92%;
+                right: 0;
+            }
+
+            .foto3 {
+                background-image: url("../img/member3.png");
+                background-position: top center;
+                background-size: 94%;
+                left: 0;
+            }
+
+            .foto4 {
+                background-image: url("../img/member4.png");
+                background-position: center;
+                background-size: 105%;
+                right: 0;
             }
 
             .mask {
@@ -94,29 +139,30 @@ $colorWhite: #FFF;
                 border-radius: 50%;
                 position: absolute;
                 top: 0;
-                left: 0;
                 z-index: 1;
             }
+
+            .fotoLab+.mask,
+            .foto2+.mask,
+            .foto4+.mask {
+                left: 0;
+            }
+
+            .foto1+.mask,
+            .foto3+.mask {
+                right: 0;
+            }
+
+
+        }
+
+        &:nth-child(even) .member_foto {
+            margin-left: 59px;
         }
 
 
-        .ava {
-            flex-basis: 30%;
-            width: 366px;
-            height: 366px;
-            position: relative;
-
-            &::before {
-                content: "";
-                background: url(../img/member_mask.svg) no-repeat;
-                position: absolute;
-                width: 366px;
-                height: 366px;
-                top: 0;
-                right: 0;
-                z-index: -1;
-            }
-
+        &:nth-child(odd) .member_foto {
+            margin-right: 59px;
         }
 
         .radius {
@@ -126,7 +172,7 @@ $colorWhite: #FFF;
         }
 
         .details {
-            flex-basis: 60%;
+            flex-basis: 45%;
             padding: 25px 30px 19px 57px;
 
 

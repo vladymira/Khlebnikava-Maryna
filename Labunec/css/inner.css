@@ -4,22 +4,29 @@
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
   margin-bottom: 50px; }
-  .header .nav_main ul li {
-    padding: 48px 39px;
-    font-family: "NK90", Regular;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #94C31F;
-    background-image: url("../img/li_border.svg");
-    background-position-x: 100%;
-    background-position-y: 50%;
-    background-repeat: no-repeat; }
-    .header .nav_main ul li.activ {
-      color: #FFF;
-      background: #94C31F;
-      box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25); }
+  .header .nav_main ul {
+    justify-content: center; }
+    .header .nav_main ul li {
+      padding-top: 48px;
+      padding-bottom: 48px;
+      flex-basis: 16.6%;
+      font-family: "NK90", Regular;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #94C31F;
+      background-image: url("../img/li_border.svg");
+      background-position-x: 100%;
+      background-position-y: 50%;
+      background-repeat: no-repeat; }
+      .header .nav_main ul li.activ {
+        color: #FFF;
+        background: #94C31F;
+        box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25);
+        pointer-events: none; }
+      .header .nav_main ul li:last-child {
+        background-image: none; }
 
 .title {
   font-family: "NK90", Regular;
@@ -37,24 +44,49 @@
   .members .member {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
     margin-bottom: 60px; }
+    .members .member:nth-child(odd) {
+      margin-right: 60px; }
     .members .member:nth-child(even) {
-      flex-direction: row-reverse; }
+      flex-direction: row-reverse;
+      margin-left: 60px; }
     .members .member .member_foto {
       position: relative;
       width: 386px;
       height: 386px; }
       .members .member .member_foto .foto {
-        background-image: url("../img/memberLab.png");
         background-position: center;
         width: 366px;
         height: 366px;
         border-radius: 50%;
         position: absolute;
         bottom: 0;
-        right: 0;
         z-index: 2; }
+      .members .member .member_foto .fotoLab {
+        background-image: url("../img/memberLab.png");
+        background-size: 95%;
+        right: 0; }
+      .members .member .member_foto .foto1 {
+        background-image: url("../img/member1.png");
+        background-size: 90%;
+        background-position: top center;
+        left: 0; }
+      .members .member .member_foto .foto2 {
+        background-image: url("../img/member2.png");
+        background-position: top center;
+        background-size: 92%;
+        right: 0; }
+      .members .member .member_foto .foto3 {
+        background-image: url("../img/member3.png");
+        background-position: top center;
+        background-size: 94%;
+        left: 0; }
+      .members .member .member_foto .foto4 {
+        background-image: url("../img/member4.png");
+        background-position: center;
+        background-size: 105%;
+        right: 0; }
       .members .member .member_foto .mask {
         background-color: #94C31F;
         width: 366px;
@@ -62,28 +94,24 @@
         border-radius: 50%;
         position: absolute;
         top: 0;
-        left: 0;
         z-index: 1; }
-    .members .member .ava {
-      flex-basis: 30%;
-      width: 366px;
-      height: 366px;
-      position: relative; }
-      .members .member .ava::before {
-        content: "";
-        background: url(../img/member_mask.svg) no-repeat;
-        position: absolute;
-        width: 366px;
-        height: 366px;
-        top: 0;
-        right: 0;
-        z-index: -1; }
+      .members .member .member_foto .fotoLab + .mask,
+      .members .member .member_foto .foto2 + .mask,
+      .members .member .member_foto .foto4 + .mask {
+        left: 0; }
+      .members .member .member_foto .foto1 + .mask,
+      .members .member .member_foto .foto3 + .mask {
+        right: 0; }
+    .members .member:nth-child(even) .member_foto {
+      margin-left: 59px; }
+    .members .member:nth-child(odd) .member_foto {
+      margin-right: 59px; }
     .members .member .radius {
       background: linear-gradient(180deg, #FFFFFF 0%, #F1F1F1 100%);
       box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
       border-radius: 10px; }
     .members .member .details {
-      flex-basis: 60%;
+      flex-basis: 45%;
       padding: 25px 30px 19px 57px; }
       .members .member .details .initials {
         font-family: 'NK90';

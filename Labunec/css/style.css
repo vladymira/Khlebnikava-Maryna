@@ -12,7 +12,7 @@ body {
   margin: 0 auto; }
   .container.container-slider {
     max-width: 1340px; }
-  .container.container-footer {
+  .container.container-footer, .container.container-members {
     max-width: 1000px; }
 
 .flex {
