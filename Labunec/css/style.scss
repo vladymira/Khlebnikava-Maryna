@@ -35,7 +35,7 @@ body {
 
 
 .nk90 {
-    font-family: 'NK90', Regular;
+    font-family: $fontNK90, Regular;//???? regular
 
     font-weight: 400;
     color: #2b2c54;
@@ -74,8 +74,8 @@ li {
     list-style-type: none;
 }
 
-header {
-    font-family: 'Gilroy', Sans Serif;
+.header {
+    font-family: $fontGilroy;
     color: white;
 
     ul {
@@ -350,7 +350,7 @@ header {
     right: var(--swiper-navigation-sides-offset, -25px) !important;
     background-position-x: 27px;
 
-    &::after {
+    &:after {
         font-weight: bolder;
     }
 }
@@ -364,7 +364,7 @@ header {
     left: var(--swiper-navigation-sides-offset, -25px) !important;
     background-position-x: -27px;
 
-    &::afters {
+    &:after {
         font-weight: bolder;
     }
 }

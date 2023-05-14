@@ -19,6 +19,7 @@ $colorWhite: #FFF;
 
         ul {
             justify-content: center;
+
             li {
                 padding-top: 48px;
                 padding-bottom: 48px;
@@ -153,6 +154,22 @@ $colorWhite: #FFF;
                 right: 0;
             }
 
+            @media screen and (max-width: 1024px) {
+
+                width: 326px;
+                height: 326px;
+
+                .foto {
+                    width: 306px;
+                    height: 306px;
+                }
+
+                .mask {
+                    width: 306px;
+                    height: 306px;
+                }
+            }
+
 
         }
 
@@ -177,7 +194,7 @@ $colorWhite: #FFF;
 
 
             .initials {
-                font-family: 'NK90';
+                font-family: $fontNK90;
 
                 font-weight: 400;
                 font-size: 24px;
@@ -188,7 +205,7 @@ $colorWhite: #FFF;
             }
 
             .position {
-                font-family: 'Poppins';
+                font-family: $fontPoppins;
 
                 font-weight: 700;
                 font-size: 14px;
@@ -200,7 +217,7 @@ $colorWhite: #FFF;
             }
 
             .about {
-                font-family: 'Poppins';
+                font-family: $fontPoppins;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 26px;

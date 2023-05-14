@@ -102,6 +102,16 @@
       .members .member .member_foto .foto1 + .mask,
       .members .member .member_foto .foto3 + .mask {
         right: 0; }
+      @media screen and (max-width: 1024px) {
+        .members .member .member_foto {
+          width: 326px;
+          height: 326px; }
+          .members .member .member_foto .foto {
+            width: 306px;
+            height: 306px; }
+          .members .member .member_foto .mask {
+            width: 306px;
+            height: 306px; } }
     .members .member:nth-child(even) .member_foto {
       margin-left: 59px; }
     .members .member:nth-child(odd) .member_foto {
@@ -114,14 +124,14 @@
       flex-basis: 45%;
       padding: 25px 30px 19px 57px; }
       .members .member .details .initials {
-        font-family: 'NK90';
+        font-family: "NK90", Regular;
         font-weight: 400;
         font-size: 24px;
         line-height: 30px;
         color: #94C31F;
         margin-bottom: 7px; }
       .members .member .details .position {
-        font-family: 'Poppins';
+        font-family: "Poppins", Sans Serif;
         font-weight: 700;
         font-size: 14px;
         line-height: 22px;
@@ -129,7 +139,7 @@
         text-transform: uppercase;
         margin-bottom: 42px; }
       .members .member .details .about {
-        font-family: 'Poppins';
+        font-family: "Poppins", Sans Serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 26px;
