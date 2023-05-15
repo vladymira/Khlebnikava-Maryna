@@ -25,10 +25,10 @@ body {
   font-weight: 400;
   color: #2b2c54; }
 
-.align_center {
+.align-center {
   text-align: center; }
 
-.NK90_400_green {
+.NK90-400-green {
   font-family: "NK90", Regular;
   font-weight: 400;
   color: #94C31F; }
@@ -37,10 +37,10 @@ body {
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
   border-radius: 10px; }
 
-.slider_title {
+.slider-title {
   font-size: 30px; }
 
-.mobile_only {
+.mobile-only {
   display: none; }
 
 a {
@@ -85,20 +85,20 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
-    .header .menu .dropdown_pict {
+    .header .menu .dropdown-pict {
       padding: 10px;
       background-color: #FFF;
       z-index: 2;
       position: relative; }
-      .header .menu .dropdown_pict:hover {
+      .header .menu .dropdown-pict:hover {
         border: solid #94C31F;
         border-width: 1px 1px 0px 1px; }
-        .header .menu .dropdown_pict:hover .dropdown_content {
+        .header .menu .dropdown-pict:hover .dropdown-content {
           display: block;
           transition: all 1s ease-out 0.5s; }
-  .header .dropdown_content {
+  .header .dropdown-content {
     display: none; }
-    .header .dropdown_content ul {
+    .header .dropdown-content ul {
       display: flex;
       flex-direction: column;
       position: absolute;
@@ -107,7 +107,7 @@ li {
       background-color: #FFF;
       border: #94C31F 1px solid;
       z-index: 1; }
-      .header .dropdown_content ul li {
+      .header .dropdown-content ul li {
         min-width: 150px;
         height: 30px;
         font-family: "Gilroy", Sans Serif;
@@ -136,41 +136,41 @@ li {
     width: 878px;
     height: 668px; }
 
-.info_content {
+.info-content {
   margin-top: -668px;
   margin-bottom: 65px;
   height: 668px; }
+  .info-content .container {
+    padding-right: 580px; }
   @media screen and (min-width: 980px) and (max-width: 1280px) {
-    .info_content .title {
+    .info-content .title {
       font-size: 50px;
       line-height: 61px; }
-    .info_content .description {
+    .info-content .description {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 86px; }
-    .info_content .slogan {
+    .info-content .slogan {
       font-size: 15px;
       line-height: 18px;
       margin-bottom: 66px; } }
-  .info_content .container {
-    padding-right: 580px; }
-  .info_content .title {
+  .info-content .title {
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 73px; }
-  .info_content .description {
+  .info-content .description {
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 96px; }
-  .info_content .slogan {
+  .info-content .slogan {
     font-style: italic;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 76px; }
-  .info_content .btn {
+  .info-content .btn {
     padding: 20px 50px;
     background: #F8F8F8;
     box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.25);
@@ -263,11 +263,11 @@ li {
 .problem {
   margin-top: 78px;
   margin-bottom: 150px; }
-  .problem ul.problem_header {
+  .problem ul.problem-header {
     padding-top: 39px;
     display: flex;
     text-align: center; }
-    .problem ul.problem_header li {
+    .problem ul.problem-header li {
       width: 454px;
       height: 75px;
       font-family: "Gilroy", Sans Serif;
@@ -279,7 +279,7 @@ li {
       display: flex;
       align-items: center;
       justify-content: center; }
-    .problem ul.problem_header li.ui-state-active {
+    .problem ul.problem-header li.ui-state-active {
       background: #94C31F;
       border-radius: 8px;
       font-family: "Gilroy", Sans Serif;
@@ -289,48 +289,48 @@ li {
       color: #FFFFFF;
       border-color: transparent; }
 
-.problem_content {
+.problem-content {
   height: 362px;
   justify-content: space-between;
   padding-top: 26px; }
-  .problem_content ul {
+  .problem-content ul {
     height: 362px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     padding-left: 34px; }
-  .problem_content li {
+  .problem-content li {
     background: url("../img/check.png") no-repeat;
     background-size: 36px 29px;
     padding-left: 65px;
     height: 60px; }
-  .problem_content .left {
+  .problem-content .left {
     width: calc(100% - 398px); }
-  .problem_content .right {
+  .problem-content .right {
     background: url("../img/ball_with_boy.png") no-repeat;
     /* background-size: 668px; */
     width: 398px;
     height: 362px;
     position: relative; }
-    .problem_content .right .circle {
+    .problem-content .right .circle {
       position: absolute;
       width: 60px;
       height: 60px;
       left: 170px;
       bottom: -30px; }
-    .problem_content .right .triangle {
+    .problem-content .right .triangle {
       position: absolute;
       width: 36px;
       height: 36px;
       left: 187px;
       bottom: -18px; }
-    .problem_content .right .line {
+    .problem-content .right .line {
       position: absolute;
       width: 68.55px;
       height: 66.09px;
       left: 120px;
       bottom: -97px; }
-    .problem_content .right span {
+    .problem-content .right span {
       position: absolute;
       width: 97px;
       height: 28px;

@@ -1,6 +1,6 @@
 @import 'settings.scss';
 
-.mobile_only {
+.mobile-only {
     display: block;
 }
 
@@ -65,7 +65,7 @@
         }
     }
 
-    .dropdown_content ul {
+    .dropdown-content ul {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -83,7 +83,7 @@
 
 
 
-    .nav_main {
+    .nav-main {
         ul {
             flex-wrap: wrap;
             position: relative;
@@ -108,7 +108,7 @@
         }
     }
 
-    .info_content {
+    .info-content {
 
         margin-bottom: 40px;
 
@@ -156,7 +156,7 @@
     }
 }
 
-.slider_title {
+.slider-title {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -229,11 +229,11 @@
         display: block !important;
     }
 
-    ul.problem_header {
+    ul.problem-header {
         display: none;
     }
 
-    .problem_title {
+    .problem-title {
         display: flex;
         justify-self: center;
         justify-content: center;
@@ -270,7 +270,7 @@
 
     }
 
-    .problem_content {
+    .problem-content {
 
         padding-top: 16px;
 
@@ -510,17 +510,17 @@ footer {
                 margin-right: 0;
             }
 
-            &:nth-child(even) .member_foto {
+            &:nth-child(even) .member-foto {
                 margin-left: 0px;
             }
 
 
-            &:nth-child(odd) .member_foto {
+            &:nth-child(odd) .member-foto {
                 margin-right: 0px;
             }
 
 
-            .member_foto {
+            .member-foto {
                 width: 173px;
                 height: 173px;
                 margin-bottom: 36px;
@@ -546,18 +546,6 @@ footer {
                     left: auto;
                 }
 
-
-                // [class^='foto'] {
-                //     left: 0;
-                // }
-
-                // .fotoLab+.mask,
-                // .foto1+.mask,
-                // .foto2+.mask,
-                // .foto3+.mask,
-                // .foto4+.mask {
-                //     left: 0;
-                // }
             }
 
             .details {
@@ -592,6 +580,47 @@ footer {
                     line-height: 26px;
                     color: #7E8085;
                 }
+            }
+        }
+    }
+}
+
+.main-center {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 68px;
+
+    .container-center {
+        padding: 27px 20px;
+        text-align: center;
+    }
+
+}
+
+.main-certificates {
+
+    margin-bottom: 38px;
+
+    .title {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 36px;
+    }
+
+    .container-certificates {
+
+        min-height: 180px;
+
+        .svidetelstvo {
+            img {
+                max-width: 126px;
+            }
+        }
+
+        .license {
+            img {
+                max-width: 126px;
+                height: 100%;
             }
         }
     }

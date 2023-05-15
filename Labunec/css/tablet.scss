@@ -1,6 +1,6 @@
 @import 'settings.scss';
 
-header .dropdown_content ul {
+.header .dropdown-content ul {
     // left: 41px;
 }
 
@@ -8,7 +8,7 @@ header .dropdown_content ul {
     display: none;
 }
 
-.info_content {
+.info-content {
     padding: 21px;
 
     .container {
@@ -34,7 +34,7 @@ header .dropdown_content ul {
     display: none;
 }
 
-.problem_content {
+.problem-content {
     flex-direction: column;
     height: auto;
 

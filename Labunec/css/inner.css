@@ -1,12 +1,12 @@
-.header .header_top {
+.header .header-top {
   margin-bottom: 29px; }
-.header .nav_main {
+.header .nav-main {
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
   margin-bottom: 50px; }
-  .header .nav_main ul {
+  .header .nav-main ul {
     justify-content: center; }
-    .header .nav_main ul li {
+    .header .nav-main ul li {
       padding-top: 48px;
       padding-bottom: 48px;
       flex-basis: 16.6%;
@@ -20,12 +20,12 @@
       background-position-x: 100%;
       background-position-y: 50%;
       background-repeat: no-repeat; }
-      .header .nav_main ul li.activ {
+      .header .nav-main ul li.activ {
         color: #FFF;
         background: #94C31F;
         box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25);
         pointer-events: none; }
-      .header .nav_main ul li:last-child {
+      .header .nav-main ul li:last-child {
         background-image: none; }
 
 .title {
@@ -51,11 +51,11 @@
     .members .member:nth-child(even) {
       flex-direction: row-reverse;
       margin-left: 60px; }
-    .members .member .member_foto {
+    .members .member .member-foto {
       position: relative;
       width: 386px;
       height: 386px; }
-      .members .member .member_foto .foto {
+      .members .member .member-foto .foto {
         background-position: center;
         width: 366px;
         height: 366px;
@@ -63,31 +63,31 @@
         position: absolute;
         bottom: 0;
         z-index: 2; }
-      .members .member .member_foto .fotoLab {
+      .members .member .member-foto .fotoLab {
         background-image: url("../img/memberLab.png");
         background-size: 95%;
         right: 0; }
-      .members .member .member_foto .foto1 {
+      .members .member .member-foto .foto1 {
         background-image: url("../img/member1.png");
         background-size: 90%;
         background-position: top center;
         left: 0; }
-      .members .member .member_foto .foto2 {
+      .members .member .member-foto .foto2 {
         background-image: url("../img/member2.png");
         background-position: top center;
         background-size: 92%;
         right: 0; }
-      .members .member .member_foto .foto3 {
+      .members .member .member-foto .foto3 {
         background-image: url("../img/member3.png");
         background-position: top center;
         background-size: 94%;
         left: 0; }
-      .members .member .member_foto .foto4 {
+      .members .member .member-foto .foto4 {
         background-image: url("../img/member4.png");
         background-position: center;
         background-size: 105%;
         right: 0; }
-      .members .member .member_foto .mask {
+      .members .member .member-foto .mask {
         background-color: #94C31F;
         width: 366px;
         height: 366px;
@@ -95,26 +95,26 @@
         position: absolute;
         top: 0;
         z-index: 1; }
-      .members .member .member_foto .fotoLab + .mask,
-      .members .member .member_foto .foto2 + .mask,
-      .members .member .member_foto .foto4 + .mask {
+      .members .member .member-foto .fotoLab + .mask,
+      .members .member .member-foto .foto2 + .mask,
+      .members .member .member-foto .foto4 + .mask {
         left: 0; }
-      .members .member .member_foto .foto1 + .mask,
-      .members .member .member_foto .foto3 + .mask {
+      .members .member .member-foto .foto1 + .mask,
+      .members .member .member-foto .foto3 + .mask {
         right: 0; }
       @media screen and (max-width: 1024px) {
-        .members .member .member_foto {
+        .members .member .member-foto {
           width: 326px;
           height: 326px; }
-          .members .member .member_foto .foto {
+          .members .member .member-foto .foto {
             width: 306px;
             height: 306px; }
-          .members .member .member_foto .mask {
+          .members .member .member-foto .mask {
             width: 306px;
             height: 306px; } }
-    .members .member:nth-child(even) .member_foto {
+    .members .member:nth-child(even) .member-foto {
       margin-left: 59px; }
-    .members .member:nth-child(odd) .member_foto {
+    .members .member:nth-child(odd) .member-foto {
       margin-right: 59px; }
     .members .member .radius {
       background: linear-gradient(180deg, #FFFFFF 0%, #F1F1F1 100%);
@@ -144,5 +144,36 @@
         font-size: 16px;
         line-height: 26px;
         color: #7E8085; }
+
+.header .nav-main.centerlab {
+  margin-bottom: 0; }
+
+.main-center {
+  background: url("../img/green_background_low.jpg") no-repeat;
+  background-size: cover;
+  font-family: "NK90", Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFF;
+  margin-bottom: 190px; }
+  .main-center .container-center {
+    padding: 57px 70px;
+    text-align: center; }
+
+.main-certificates {
+  margin-bottom: 136px; }
+  .main-certificates .container-certificates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 458px; }
+    .main-certificates .container-certificates .svidetelstvo img {
+      max-width: 326px; }
+    .main-certificates .container-certificates .license img {
+      width: initial;
+      height: 100%; }
 
 /*# sourceMappingURL=inner.css.map */

@@ -1,9 +1,9 @@
 .info .right {
   display: none; }
 
-.info_content {
+.info-content {
   padding: 21px; }
-  .info_content .container {
+  .info-content .container {
     padding-right: 0;
     text-align: center; }
 
@@ -19,13 +19,13 @@
 .mySwiper {
   display: none; }
 
-.problem_content {
+.problem-content {
   flex-direction: column;
   height: auto; }
-  .problem_content .left {
+  .problem-content .left {
     width: 100%;
     margin-bottom: 20px; }
-  .problem_content .right {
+  .problem-content .right {
     width: 398px;
     margin: 10px auto; }
 

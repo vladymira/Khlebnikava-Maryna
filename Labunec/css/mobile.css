@@ -1,4 +1,4 @@
-.mobile_only {
+.mobile-only {
   display: block; }
 
 .header .insta {
@@ -36,52 +36,52 @@
   .header .menu img {
     width: 20px;
     height: 7.5px; }
-.header .dropdown_content ul {
+.header .dropdown-content ul {
   display: flex;
   flex-direction: column;
   position: absolute;
   right: 0;
   top: 38px; }
-  .header .dropdown_content ul li {
+  .header .dropdown-content ul li {
     min-width: 130px;
     height: 24px;
     font-size: 13px;
     line-height: 24px; }
-.header .nav_main ul {
+.header .nav-main ul {
   flex-wrap: wrap;
   position: relative; }
-  .header .nav_main ul::before {
+  .header .nav-main ul::before {
     content: "";
     position: absolute;
     height: 1px;
     width: 100%;
     top: 50%;
     background: linear-gradient(270deg, rgba(196, 196, 196, 0.666667) 0%, #C4C4C4 48.96%, rgba(196, 196, 196, 0) 100%); }
-  .header .nav_main ul li {
+  .header .nav-main ul li {
     flex-basis: 33.3%;
     font-size: 11px;
     line-height: 13px;
     padding-top: 13px;
     padding-bottom: 13px; }
-.header .info_content {
+.header .info-content {
   margin-bottom: 40px; }
-  .header .info_content .title {
+  .header .info-content .title {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     margin-bottom: 40px; }
-  .header .info_content .description {
+  .header .info-content .description {
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
     margin-top: 51px; }
-  .header .info_content .slogan {
+  .header .info-content .slogan {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     position: relative;
     margin-bottom: 145px; }
-    .header .info_content .slogan::after {
+    .header .info-content .slogan::after {
       content: "";
       background: url(../img/Arrow.svg) no-repeat;
       position: absolute;
@@ -89,14 +89,14 @@
       height: 136px;
       top: 37px;
       left: calc(50% + 80px); }
-  .header .info_content .btn {
+  .header .info-content .btn {
     width: 182px;
     height: 59px;
     padding: 10px;
     font-size: 13px;
     line-height: 20px; }
 
-.slider_title {
+.slider-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -143,9 +143,9 @@
   margin-top: 43px; }
   .problem .ui-tabs-panel {
     display: block !important; }
-  .problem ul.problem_header {
+  .problem ul.problem-header {
     display: none; }
-  .problem .problem_title {
+  .problem .problem-title {
     display: flex;
     justify-self: center;
     justify-content: center;
@@ -169,12 +169,12 @@
   .problem #tabs-2 .right,
   .problem #tabs-3 .right {
     display: none; }
-  .problem .problem_content {
+  .problem .problem-content {
     padding-top: 16px; }
-    .problem .problem_content ul {
+    .problem .problem-content ul {
       height: auto;
       padding: 10px; }
-    .problem .problem_content li {
+    .problem .problem-content li {
       display: flex;
       justify-content: center;
       padding-top: 53px;
@@ -187,20 +187,20 @@
       font-weight: 600;
       font-size: 14px;
       line-height: 17px; }
-    .problem .problem_content .right {
+    .problem .problem-content .right {
       margin: 10px auto;
       background-size: contain;
       width: calc(100% - 76px);
       height: auto;
       min-height: 223px;
       background-position: top center; }
-      .problem .problem_content .right .circle {
+      .problem .problem-content .right .circle {
         position: absolute;
         width: 36px;
         height: 36px;
         left: calc(50% - 18px);
         bottom: -18px; }
-      .problem .problem_content .right .triangle {
+      .problem .problem-content .right .triangle {
         position: absolute;
         width: 24px;
         height: 24px;
@@ -319,28 +319,28 @@ footer .container ul {
     .container-members .members .member:nth-child(odd) {
       flex-direction: column;
       margin-right: 0; }
-    .container-members .members .member:nth-child(even) .member_foto {
+    .container-members .members .member:nth-child(even) .member-foto {
       margin-left: 0px; }
-    .container-members .members .member:nth-child(odd) .member_foto {
+    .container-members .members .member:nth-child(odd) .member-foto {
       margin-right: 0px; }
-    .container-members .members .member .member_foto {
+    .container-members .members .member .member-foto {
       width: 173px;
       height: 173px;
       margin-bottom: 36px; }
-      .container-members .members .member .member_foto .foto {
+      .container-members .members .member .member-foto .foto {
         background-position: center;
         width: 163px;
         height: 163px;
         margin-right: 0;
         bottom: 0;
         right: 0; }
-      .container-members .members .member .member_foto .mask {
+      .container-members .members .member .member-foto .mask {
         width: 163px;
         height: 163px;
         top: 0;
         left: 0; }
-      .container-members .members .member .member_foto .foto1,
-      .container-members .members .member .member_foto .foto3 {
+      .container-members .members .member .member-foto .foto1,
+      .container-members .members .member .member-foto .foto3 {
         left: auto; }
     .container-members .members .member .details {
       flex-basis: 45%;
@@ -367,5 +367,27 @@ footer .container ul {
         font-size: 12px;
         line-height: 26px;
         color: #7E8085; }
+
+.main-center {
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 68px; }
+  .main-center .container-center {
+    padding: 27px 20px;
+    text-align: center; }
+
+.main-certificates {
+  margin-bottom: 38px; }
+  .main-certificates .title {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 36px; }
+  .main-certificates .container-certificates {
+    min-height: 180px; }
+    .main-certificates .container-certificates .svidetelstvo img {
+      max-width: 126px; }
+    .main-certificates .container-certificates .license img {
+      max-width: 126px;
+      height: 100%; }
 
 /*# sourceMappingURL=mobile.css.map */

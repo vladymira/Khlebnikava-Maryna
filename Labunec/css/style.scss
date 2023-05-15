@@ -41,11 +41,11 @@ body {
     color: #2b2c54;
 }
 
-.align_center {
+.align-center {
     text-align: center;
 }
 
-.NK90_400_green {
+.NK90-400-green {
     font-family: $fontNK90;
     font-weight: 400;
     color: $backcolorGreen;
@@ -57,11 +57,11 @@ body {
     border-radius: 10px;
 }
 
-.slider_title {
+.slider-title {
     font-size: 30px;
 }
 
-.mobile_only {
+.mobile-only {
     display: none;
 }
 
@@ -126,7 +126,7 @@ li {
 
 
 
-        .dropdown_pict {
+        .dropdown-pict {
             padding: 10px;
             background-color: $colorWhite;
             z-index: 2;
@@ -136,7 +136,7 @@ li {
                 border: solid $backcolorGreen;
                 border-width: 1px 1px 0px 1px;
 
-                & .dropdown_content {
+                & .dropdown-content {
                     display: block;
                     transition: all 1s ease-out 0.5s;
                 }
@@ -144,7 +144,7 @@ li {
         }
     }
 
-    .dropdown_content {
+    .dropdown-content {
 
         display: none;
 
@@ -198,10 +198,15 @@ li {
     }
 }
 
-.info_content {
+.info-content {
     margin-top: -668px;
     margin-bottom: 65px;
     height: 668px;
+
+   
+    .container {
+        padding-right: 580px;
+    }
 
     @media screen and (min-width: 980px) and (max-width: 1280px) {
         // margin-top: -650px;
@@ -222,10 +227,6 @@ li {
             line-height: 18px;
             margin-bottom: 66px;
         }
-    }
-
-    .container {
-        padding-right: 580px;
     }
 
     .title {
@@ -267,6 +268,28 @@ li {
         letter-spacing: 0.1em;
         color: $colorBlack;
     }
+
+    // @media screen and (min-width: 980px) and (max-width: 1280px) {
+    //     // margin-top: -650px;
+
+    //     .title {
+    //         font-size: 50px;
+    //         line-height: 61px;
+    //     }
+    
+    //     .description {
+    //         font-size: 20px;
+    //         line-height: 24px;
+    //         margin-bottom: 86px;
+    //     }
+    
+    //     .slogan {
+    //         font-size: 15px;
+    //         line-height: 18px;
+    //         margin-bottom: 66px;
+    //     }
+    // }
+
 }
 
 .slider-thumb {
@@ -373,7 +396,7 @@ li {
     margin-top: 78px;
     margin-bottom: 150px;
 
-    ul.problem_header {
+    ul.problem-header {
         padding-top: 39px;
         display: flex;
         text-align: center;
@@ -409,7 +432,7 @@ li {
 
 }
 
-.problem_content {
+.problem-content {
     height: 362px;
     justify-content: space-between;
     padding-top: 26px;
