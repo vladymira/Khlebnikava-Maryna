@@ -12,7 +12,7 @@ body {
   margin: 0 auto; }
   .container.container-slider {
     max-width: 1340px; }
-  .container.container-footer, .container.container-members {
+  .container.container-footer, .container.container-members, .container.container-certificates {
     max-width: 1000px; }
 
 .flex {
@@ -145,7 +145,8 @@ li {
   @media screen and (min-width: 980px) and (max-width: 1280px) {
     .info-content .title {
       font-size: 50px;
-      line-height: 61px; }
+      line-height: 61px;
+      color: red; }
     .info-content .description {
       font-size: 20px;
       line-height: 24px;

@@ -1,32 +1,33 @@
-.header .header-top {
-  margin-bottom: 29px; }
-.header .nav-main {
-  background: #FFFFFF;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
+.header {
   margin-bottom: 50px; }
-  .header .nav-main ul {
-    justify-content: center; }
-    .header .nav-main ul li {
-      padding-top: 48px;
-      padding-bottom: 48px;
-      flex-basis: 16.6%;
-      font-family: "NK90", Regular;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-      color: #94C31F;
-      background-image: url("../img/li_border.svg");
-      background-position-x: 100%;
-      background-position-y: 50%;
-      background-repeat: no-repeat; }
-      .header .nav-main ul li.activ {
-        color: #FFF;
-        background: #94C31F;
-        box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25);
-        pointer-events: none; }
-      .header .nav-main ul li:last-child {
-        background-image: none; }
+  .header .header-top {
+    margin-bottom: 29px; }
+  .header .nav-main {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18); }
+    .header .nav-main ul {
+      justify-content: center; }
+      .header .nav-main ul li {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        flex-basis: 16.6%;
+        font-family: "NK90", Regular;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #94C31F;
+        background-image: url("../img/li_border.svg");
+        background-position-x: 100%;
+        background-position-y: 50%;
+        background-repeat: no-repeat; }
+        .header .nav-main ul li.activ {
+          color: #FFF;
+          background: #94C31F;
+          box-shadow: inset 0px 0px 13px rgba(0, 0, 0, 0.25);
+          pointer-events: none; }
+        .header .nav-main ul li:last-child {
+          background-image: none; }
 
 .title {
   font-family: "NK90", Regular;
@@ -45,7 +46,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    position: relative; }
+    .members .member .line {
+      position: absolute;
+      width: 141.5px;
+      height: 50.85px;
+      bottom: 2px;
+      right: 472px; }
+      @media screen and (max-width: 1030px) {
+        .members .member .line {
+          display: none; } }
+      .members .member .line.reflection {
+        transform: scale(1, -1);
+        top: 8px;
+        left: 472px; }
     .members .member:nth-child(odd) {
       margin-right: 60px; }
     .members .member:nth-child(even) {
@@ -54,7 +69,8 @@
     .members .member .member-foto {
       position: relative;
       width: 386px;
-      height: 386px; }
+      height: 386px;
+      position: relative; }
       .members .member .member-foto .foto {
         background-position: center;
         width: 366px;
@@ -167,13 +183,104 @@
   .main-certificates .container-certificates {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-height: 458px; }
+    justify-content: space-around;
+    align-items: center; }
     .main-certificates .container-certificates .svidetelstvo img {
-      max-width: 326px; }
+      max-width: 346px;
+      max-height: 478px; }
     .main-certificates .container-certificates .license img {
-      width: initial;
-      height: 100%; }
+      max-width: 346px;
+      max-height: 478px; }
+
+.main-author {
+  margin-bottom: 74px; }
+  .main-author .container-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Gilroy", Sans Serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px; }
+    .main-author .container-author .group1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 10px; }
+      .main-author .container-author .group1 .text {
+        flex-basis: 45%; }
+      .main-author .container-author .group1 .pict {
+        flex-basis: 45%; }
+        .main-author .container-author .group1 .pict img {
+          width: 308px;
+          height: 304.93px; }
+    .main-author .container-author .group2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 10px; }
+      .main-author .container-author .group2 .text {
+        flex-basis: 60%; }
+      .main-author .container-author .group2 .pict {
+        flex-basis: 30%; }
+        .main-author .container-author .group2 .pict img {
+          width: 430px;
+          height: 671px; }
+
+.main-metodology {
+  margin-bottom: 58px; }
+  .main-metodology .container-metodology {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Gilroy", Sans Serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px; }
+    .main-metodology .container-metodology .group1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 10px; }
+      .main-metodology .container-metodology .group1 .text {
+        flex-basis: 45%; }
+      .main-metodology .container-metodology .group1 .pict {
+        flex-basis: 45%;
+        position: relative; }
+        .main-metodology .container-metodology .group1 .pict img.X-rey {
+          width: 407px;
+          height: 305px;
+          position: relative;
+          z-index: 2; }
+        .main-metodology .container-metodology .group1 .pict img.doc_background {
+          width: 407px;
+          height: 305px;
+          position: absolute;
+          z-index: 1;
+          top: -32px;
+          right: 200px; }
+    .main-metodology .container-metodology .group2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 10px; }
+      .main-metodology .container-metodology .group2 .text {
+        flex-basis: 60%; }
+
+.wrap {
+  position: relative; }
+  .wrap ::before {
+    content: "ssssssssssssss";
+    position: absolute;
+    background: url("../img/background_gray.png") 0 0 no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=inner.css.map */

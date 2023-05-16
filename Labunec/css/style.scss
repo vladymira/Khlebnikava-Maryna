@@ -22,7 +22,7 @@ body {
         max-width: 1340px;
     }
 
-    &.container-footer, &.container-members {
+    &.container-footer, &.container-members, &.container-certificates {
         max-width: 1000px;
     }
 }
@@ -269,27 +269,7 @@ li {
         color: $colorBlack;
     }
 
-    // @media screen and (min-width: 980px) and (max-width: 1280px) {
-    //     // margin-top: -650px;
-
-    //     .title {
-    //         font-size: 50px;
-    //         line-height: 61px;
-    //     }
-    
-    //     .description {
-    //         font-size: 20px;
-    //         line-height: 24px;
-    //         margin-bottom: 86px;
-    //     }
-    
-    //     .slogan {
-    //         font-size: 15px;
-    //         line-height: 18px;
-    //         margin-bottom: 66px;
-    //     }
-    // }
-
+   
 }
 
 .slider-thumb {
