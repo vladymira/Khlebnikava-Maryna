@@ -390,26 +390,72 @@ footer .container ul {
     font-size: 15px;
     line-height: 18px;
     margin-bottom: 36px; }
-  .main-certificates .container-certificates .svidetelstvo img {
-    max-width: 126px;
-    max-height: 180px; }
-  .main-certificates .container-certificates .license img {
-    max-width: 126px;
-    max-height: 180px; }
+  .main-certificates .container-certificates {
+    justify-content: center; }
+    .main-certificates .container-certificates .svidetelstvo {
+      padding-right: 16px; }
+      .main-certificates .container-certificates .svidetelstvo img {
+        width: auto;
+        height: 180px; }
+    .main-certificates .container-certificates .license {
+      padding-left: 16px; }
+      .main-certificates .container-certificates .license img {
+        width: auto;
+        height: 180px; }
 
 .wrap ::before {
   background-size: 80%; }
 
 .main-author {
   margin-bottom: 37px; }
+  .main-author .container-author p {
+    font-size: 16px;
+    line-height: 23px; }
   .main-author .container-author .group1 {
     flex-direction: column; }
+    .main-author .container-author .group1 .pict {
+      width: 198px;
+      height: 198x; }
+      .main-author .container-author .group1 .pict img {
+        width: 198px;
+        height: 198px; }
   .main-author .container-author .group2 {
     flex-direction: column-reverse; }
 
 .main-metodology {
   margin-bottom: 38px; }
-  .main-metodology .container-metodology .group1 {
-    flex-direction: column; }
+  .main-metodology .title {
+    margin-bottom: 29px; }
+  .main-metodology .container-metodology {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .main-metodology .container-metodology .group1 {
+      flex-direction: column-reverse;
+      margin-bottom: 47px; }
+      .main-metodology .container-metodology .group1 .text {
+        flex-basis: 60%;
+        margin-bottom: 40px; }
+        .main-metodology .container-metodology .group1 .text .title {
+          font-size: 16px;
+          line-height: 26px;
+          margin-bottom: 13px;
+          text-align: center; }
+      .main-metodology .container-metodology .group1 .pict {
+        flex-basis: 223px;
+        width: 288px;
+        height: 223px; }
+        .main-metodology .container-metodology .group1 .pict img.X-rey {
+          width: 277px;
+          height: 202px;
+          bottom: 11px; }
+        .main-metodology .container-metodology .group1 .pict img.doc_background {
+          width: 277px;
+          height: 202px; }
+
+.wrap {
+  background: url("../img/background_gray_mobile.png") 0 0 no-repeat;
+  background-size: auto; }
 
 /*# sourceMappingURL=mobile.css.map */

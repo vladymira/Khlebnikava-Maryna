@@ -619,39 +619,25 @@ footer {
         margin-bottom: 36px;
     }
 
-    // .container-certificates {
-
-    //     min-height: 180px;
-
-    //     .svidetelstvo {
-    //         img {
-    //             max-width: 126px;
-    //         }
-    //     }
-
-    //     .license {
-    //         img {
-    //             max-width: 126px;
-    //             height: 100%;
-    //         }
-    //     }
-    // }
-
     .container-certificates {
 
-        .svidetelstvo {
-            img {
-                max-width: 126px;
-                max-height: 180px;
+        justify-content: center;
 
+        .svidetelstvo {
+            padding-right: 16px;
+
+            img {
+                width: auto;
+                height: 180px;
             }
         }
 
         .license {
-            img {
-                max-width: 126px;
-                max-height: 180px;
+            padding-left: 16px;
 
+            img {
+                width: auto;
+                height: 180px;
             }
         }
     }
@@ -669,10 +655,28 @@ footer {
 .main-author {
     margin-bottom: 37px;
 
-    .container-author {        
+
+    .container-author {
+        p {
+            font-size: 16px;
+            line-height: 23px;
+
+        }
+
         .group1 {
             flex-direction: column;
+
+            .pict {                
+                width: 198px;
+                height: 198x;
+
+                img {
+                    width: 198px;
+                    height: 198px;
+                }
+            }
         }
+
         .group2 {
             flex-direction: column-reverse;
         }
@@ -683,9 +687,54 @@ footer {
 .main-metodology {
     margin-bottom: 38px;
 
-    .container-metodology {        
-        .group1 {
-            flex-direction: column;
-        }    
+    .title {
+        margin-bottom: 29px;
     }
+
+    .container-metodology {
+        font-size: 18px;
+        line-height: 26px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .group1 {
+            flex-direction: column-reverse;
+            margin-bottom: 47px;
+
+            .text {
+                flex-basis: 60%;
+                margin-bottom: 40px;
+
+                .title {
+                    font-size: 16px;
+                    line-height: 26px;
+                    margin-bottom: 13px;
+                    text-align: center;
+                }
+            }
+
+            .pict {
+                flex-basis: 223px;
+                width: 288px;
+                height: 223px;
+
+
+                img.X-rey {
+                    width: 277px;
+                    height: 202px;
+                    bottom: 11px;
+                }
+
+                img.doc_background {
+                    width: 277px;
+                    height: 202px;
+                }
+            }
+        }
+    }
+}
+
+.wrap {
+    background: url('../img/background_gray_mobile.png') 0 0 no-repeat;
+    background-size: auto;
 }
