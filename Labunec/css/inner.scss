@@ -40,6 +40,7 @@
                 background-position-y: 50%;
                 background-repeat: no-repeat;
 
+
                 &.activ {
                     color: $colorWhite;
                     background: $backcolorGreen;
@@ -51,6 +52,19 @@
 
                 &:last-child {
                     background-image: none;
+                }
+
+                a {
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: $backcolorGreen;
+                        color: $colorWhite;
+                        opacity: 0.7;
+                        border-radius: 5%;
+                        padding: 5px;
+                    }
+
                 }
             }
         }
@@ -367,7 +381,7 @@
 
             .pict {
                 flex-basis: 30%;
-                margin-right: 40px;                
+                margin-right: 40px;
 
                 img {
                     width: 430px;
@@ -376,7 +390,7 @@
                 }
             }
 
-            
+
             @media screen and (min-width: 768px) and (max-width: 1200px) {
                 align-items: flex-start
             }
@@ -531,24 +545,31 @@
     position: realtive;
 
     .mySwiper3 {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        height: 834px;
 
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
+        .gallery-slide {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 1281px;
+            height: 100%;
 
-            img {
-                width: 387px;
-                height: 387px;
-                margin: 30px;
+            .gallery-element {
+                display: flex;
+                justify-content: space-between;
+                align-content: space-around;
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 1281px;
+                height: 100%;
             }
         }
-
     }
+
+    // .swiper-button-prev {
+    //     top: var(--swiper-navigation-top-offset, 131%);
+    //     left: var(--swiper-navigation-sides-offset, 33%);
+    // }
 }
