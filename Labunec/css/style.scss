@@ -772,3 +772,27 @@ footer {
         overflow: hidden;
     }
 }
+
+.container-gallery .swiper {
+    height: 834px;
+}
+
+
+.gallery-slide {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1281px;
+    height: 100%;
+
+}
+
+.gallery-element {
+    width: 387px;
+    height: 387px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

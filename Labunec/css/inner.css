@@ -348,19 +348,22 @@
 .main-gallery {
   position: realtive; }
   .main-gallery .mySwiper3 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap; }
-    .main-gallery .mySwiper3 .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
+    height: 834px; }
+    .main-gallery .mySwiper3 .gallery-slide {
       display: flex;
-      justify-content: center; }
-      .main-gallery .mySwiper3 .swiper-slide img {
-        width: 387px;
-        height: 387px;
-        margin: 30px; }
+      justify-content: space-between;
+      align-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 1281px;
+      height: 100%; }
+      .main-gallery .mySwiper3 .gallery-slide .gallery-element {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1281px;
+        height: 100%; }
 
 /*# sourceMappingURL=inner.css.map */
