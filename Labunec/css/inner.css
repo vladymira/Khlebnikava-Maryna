@@ -359,6 +359,9 @@
   .main-gallery .gallery-swiper {
     height: 945px;
     padding-bottom: 60px; }
+    @media screen and (min-width: 980px) and (max-width: 1280px) {
+      .main-gallery .gallery-swiper {
+        height: 880px; } }
     .main-gallery .gallery-swiper .swiper-slide {
       display: flex;
       justify-content: space-between;
@@ -382,6 +385,14 @@
         background-repeat: no-repeat;
         background-position: center;
         background-color: #c4c4c4; }
+        @media screen and (min-width: 1160px) and (max-width: 1280px) {
+          .main-gallery .gallery-swiper .swiper-slide .gallery-element {
+            width: 357px;
+            height: 357px; } }
+        @media screen and (min-width: 980px) and (max-width: 1159px) {
+          .main-gallery .gallery-swiper .swiper-slide .gallery-element {
+            width: 307px;
+            height: 307px; } }
         .main-gallery .gallery-swiper .swiper-slide .gallery-element.foto1 {
           background-image: url("../img/gallery1.png"); }
         .main-gallery .gallery-swiper .swiper-slide .gallery-element.foto2 {
@@ -394,20 +405,27 @@
           background-image: url("../img/gallery5.png"); }
         .main-gallery .gallery-swiper .swiper-slide .gallery-element.foto6 {
           background-image: url("../img/labunec.jpg"); }
+        .main-gallery .gallery-swiper .swiper-slide .gallery-element iframe {
+          width: 100%;
+          height: 100%; }
     .main-gallery .gallery-swiper .swiper-button-prev {
       background: none;
       width: 125px;
       height: 100px;
       top: var(--swiper-navigation-top-offset, 94%);
-      left: var(--swiper-navigation-sides-offset, 345px);
-      background-position-x: -27px; }
+      left: var(--swiper-navigation-sides-offset, 345px); }
+      @media screen and (min-width: 980px) and (max-width: 1280px) {
+        .main-gallery .gallery-swiper .swiper-button-prev {
+          left: var(--swiper-navigation-sides-offset, 245px); } }
     .main-gallery .gallery-swiper .swiper-button-next {
       background: none;
       width: 125px;
       height: 100px;
       top: var(--swiper-navigation-top-offset, 94%);
-      right: var(--swiper-navigation-sides-offset, 345px);
-      background-position-x: 27px; }
+      right: var(--swiper-navigation-sides-offset, 345px); }
+      @media screen and (min-width: 980px) and (max-width: 1280px) {
+        .main-gallery .gallery-swiper .swiper-button-next {
+          right: var(--swiper-navigation-sides-offset, 245px); } }
     .main-gallery .gallery-swiper .gallery-all {
       position: absolute;
       bottom: 12px;

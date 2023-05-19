@@ -563,6 +563,10 @@
         height: 945px;
         padding-bottom: 60px;
 
+        @media screen and (min-width: 980px) and (max-width: 1280px) {
+            height: 880px;
+        }
+
         .swiper-slide {
             display: flex;
             justify-content: space-between;
@@ -579,15 +583,26 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 max-width: 1281px;
-                height: 100%; }
-              
-              .gallery-element {
+                height: 100%;
+            }
+
+            .gallery-element {
                 width: 387px;
                 height: 387px;
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center; 
+                background-position: center;
                 background-color: #c4c4c4;
+
+                @media screen and (min-width: 1160px) and (max-width: 1280px) {
+                    width: 357px;
+                    height: 357px;
+                }
+
+                @media screen and (min-width: 980px) and (max-width: 1159px) {
+                    width: 307px;
+                    height: 307px;
+                }
 
                 &.foto1 {
                     background-image: url('../img/gallery1.png')
@@ -612,9 +627,12 @@
                 &.foto6 {
                     background-image: url('../img/labunec.jpg')
                 }
-            
-            
-            
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+
             }
         }
 
@@ -624,7 +642,10 @@
             height: 100px;
             top: var(--swiper-navigation-top-offset, 94%);
             left: var(--swiper-navigation-sides-offset, 345px);
-            background-position-x: -27px;
+
+            @media screen and (min-width: 980px) and (max-width: 1280px) {
+                left: var(--swiper-navigation-sides-offset, 245px);
+            }
         }
 
         .swiper-button-next {
@@ -633,7 +654,10 @@
             height: 100px;
             top: var(--swiper-navigation-top-offset, 94%);
             right: var(--swiper-navigation-sides-offset, 345px);
-            background-position-x: 27px;
+
+            @media screen and (min-width: 980px) and (max-width: 1280px) {
+                right: var(--swiper-navigation-sides-offset, 245px);
+            }
         }
 
         .gallery-all {
