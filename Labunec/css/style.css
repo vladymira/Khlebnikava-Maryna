@@ -20,25 +20,25 @@ body {
   flex-direction: row;
   align-items: center; }
 
-.nk90 {
-  font-family: "NK90", Regular, Regular;
-  font-weight: 400;
-  color: #2b2c54; }
-
-.align-center {
-  text-align: center; }
-
-.NK90-400-green {
-  font-family: "NK90", Regular;
-  font-weight: 400;
-  color: #94C31F; }
-
 .radius {
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
   border-radius: 10px; }
 
+.title {
+  font-family: "NK90", Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  color: #94C31F; }
+
 .slider-title {
-  font-size: 30px; }
+  font-family: "NK90", Regular;
+  font-weight: 400;
+  color: #94C31F;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 61px; }
 
 .mobile-only {
   display: none; }
@@ -137,23 +137,32 @@ li {
     height: 668px; }
 
 .info-content {
-  margin-top: -668px;
-  margin-bottom: 65px;
+  margin-top: -568px;
   height: 668px; }
+  .info-content .title {
+    font-family: "Gilroy", Sans Serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    color: #FFF; }
   .info-content .container {
     padding-right: 580px; }
   @media screen and (min-width: 980px) and (max-width: 1280px) {
-    .info-content .title {
-      font-size: 50px;
-      line-height: 61px; }
-    .info-content .description {
-      font-size: 20px;
-      line-height: 24px;
-      margin-bottom: 86px; }
-    .info-content .slogan {
-      font-size: 15px;
-      line-height: 18px;
-      margin-bottom: 66px; } }
+    .info-content {
+      margin-top: -628px;
+      margin-bottom: 30px; }
+      .info-content .title {
+        font-size: 50px;
+        line-height: 61px; }
+      .info-content .description {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 86px; }
+      .info-content .slogan {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 66px; } }
   .info-content .title {
     font-style: normal;
     font-weight: 700;
@@ -184,6 +193,9 @@ li {
     letter-spacing: 0.1em;
     color: #000; }
 
+.mySwiper .swiper-slide {
+  opacity: 1; }
+
 .slider-thumb {
   font-family: "Gilroy", Sans Serif;
   font-style: normal;
@@ -193,7 +205,9 @@ li {
   padding: 18px 15px; }
   .swiper-slide-thumb-active .slider-thumb {
     background-color: #94C31F;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
 
 .slider-content {
   display: flex;
@@ -243,8 +257,8 @@ li {
   width: 125px;
   height: 100px;
   background-size: contain;
-  top: var(--swiper-navigation-top-offset, 45%) !important;
-  right: var(--swiper-navigation-sides-offset, -25px) !important;
+  top: var(--swiper-navigation-top-offset, 45%);
+  right: var(--swiper-navigation-sides-offset, -25px);
   background-position-x: 27px; }
   .swiper-button-next:after {
     font-weight: bolder; }
@@ -254,8 +268,8 @@ li {
   width: 125px;
   height: 100px;
   background-size: contain;
-  top: var(--swiper-navigation-top-offset, 45%) !important;
-  left: var(--swiper-navigation-sides-offset, -25px) !important;
+  top: var(--swiper-navigation-top-offset, 45%);
+  left: var(--swiper-navigation-sides-offset, -25px);
   background-position-x: -27px; }
   .swiper-button-prev:after {
     font-weight: bolder; }

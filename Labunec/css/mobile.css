@@ -66,7 +66,8 @@
       padding-top: 13px;
       padding-bottom: 13px; }
   .header .info-content {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    height: 578px; }
     .header .info-content .title {
       font-size: 20px;
       line-height: 24px;
@@ -235,6 +236,7 @@
       .special .block2 .group1 .subgroup1 .group2 .group4 div:nth-of-type(3) {
         display: none; }
       .special .block2 .group1 .subgroup1 .group2 .group4 div {
+        max-width: none;
         display: flex;
         font-weight: 600;
         font-size: 14px;
@@ -243,6 +245,8 @@
         height: auto;
         padding: 20px;
         padding-top: 29px; }
+        .special .block2 .group1 .subgroup1 .group2 .group4 div.radius:nth-child(2) {
+          margin-right: 0; }
     .special .block2 .group1 .subgroup2 {
       background-image: none;
       padding: 20px;
@@ -421,6 +425,13 @@ footer .container ul {
         height: 198px; }
   .main-author .container-author .group2 {
     flex-direction: column-reverse; }
+    .main-author .container-author .group2 .pict {
+      width: 233px;
+      height: 267px;
+      margin-right: 0; }
+      .main-author .container-author .group2 .pict img {
+        width: 233px;
+        height: auto; }
 
 .main-metodology {
   margin-bottom: 38px; }

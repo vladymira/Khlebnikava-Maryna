@@ -2,7 +2,9 @@
   display: none; }
 
 .info-content {
-  padding: 21px; }
+  padding: 21px;
+  height: 578px;
+  margin-bottom: 20px; }
   .info-content .container {
     padding-right: 0;
     text-align: center; }

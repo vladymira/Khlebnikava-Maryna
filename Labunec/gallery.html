@@ -7,15 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Галерея</title>
 
-    <!-- шрифты -->
+    <!-- Fonts -->
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <!-- стили -->
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- css -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/inner.css">
+    <link rel="stylesheet" href="css/style.css">    
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile.css">
-    <!-- скрипты -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="scripts/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -75,7 +79,42 @@
 
     <section class="main-gallery">
         <div class="container container-gallery">
-            <swiper-container class="mySwiper" navigation="true">
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/gallery1.png" alt="фото1" title="фото1">
+                        <img src="img/gallery2.png" alt="фото2" title="фото2">
+                        <img src="img/gallery3.png" alt="фото3" title="фото3">
+                        <img src="img/gallery4.png" alt="фото4" title="фото4">
+                        <img src="img/gallery5.png" alt="фото5" title="фото5">
+                        <img src="img/labunec.jpg" alt="фото6" title="фото6">
+                    </div>
+                    <div class="swiper-slide"> <img src="img/gallery1.png" alt="фото1" title="фото1">
+                        <img src="img/gallery2.png" alt="фото2" title="фото2">
+                        <img src="img/gallery3.png" alt="фото3" title="фото3">
+                        <img src="img/gallery4.png" alt="фото4" title="фото4">
+                        <img src="img/gallery5.png" alt="фото5" title="фото5">
+                        <img src="img/labunec.jpg" alt="фото6" title="фото6">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/gallery1.png" alt="фото1" title="фото1">
+                        <img src="img/gallery2.png" alt="фото2" title="фото2">
+                        <img src="img/gallery3.png" alt="фото3" title="фото3">
+                        <img src="img/gallery4.png" alt="фото4" title="фото4">
+                        <img src="img/gallery5.png" alt="фото5" title="фото5">
+                        <img src="img/labunec.jpg" alt="фото6" title="фото6">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <!-- <div>Показать все</div> -->
+                <div class="swiper-button-prev"></div>
+            </div>
+
+
+
+            <!-- <swiper-container class="mySwiper" navigation="true">
                 <swiper-slide>
                     <div>
                         <img src="img/gallery1.png" alt="фото1" title="фото1">
@@ -91,7 +130,7 @@
                     <img src="img/gallery1.png" alt="фото1" title="фото1">
                 </swiper-slide>
                 <swiper-slide>Slide 3</swiper-slide>
-            </swiper-container>
+            </swiper-container> -->
         </div>
     </section>
 
@@ -152,6 +191,7 @@
         </div>
     </footer>
 
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

@@ -112,6 +112,7 @@
     .info-content {
 
         margin-bottom: 40px;
+        height: 578px;
 
         .title {
             font-size: 20px;
@@ -370,7 +371,7 @@
                         }
 
                         div {
-
+                            max-width: none;
                             display: flex;
                             font-weight: 600;
                             font-size: 14px;
@@ -379,8 +380,14 @@
                             height: auto;
                             padding: 20px;
                             padding-top: 29px;
+                            
+                            &.radius:nth-child(2) {                            
+                                margin-right: 0;
+                            }
 
                         }
+
+                       
                     }
                 }
             }
@@ -666,7 +673,7 @@ footer {
         .group1 {
             flex-direction: column;
 
-            .pict {                
+            .pict {
                 width: 198px;
                 height: 198x;
 
@@ -679,6 +686,17 @@ footer {
 
         .group2 {
             flex-direction: column-reverse;
+
+            .pict {
+                width: 233px;
+                height: 267px;
+                margin-right: 0;
+
+                img {
+                    width: 233px;
+                    height: auto;
+                }
+            }
         }
 
     }

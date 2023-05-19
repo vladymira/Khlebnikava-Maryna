@@ -22,7 +22,9 @@ body {
         max-width: 1340px;
     }
 
-    &.container-footer, &.container-members, &.container-certificates {
+    &.container-footer,
+    &.container-members,
+    &.container-certificates {
         max-width: 1000px;
     }
 }
@@ -33,33 +35,29 @@ body {
     align-items: center;
 }
 
-
-.nk90 {
-    font-family: $fontNK90, Regular;//???? regular
-
-    font-weight: 400;
-    color: #2b2c54;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.NK90-400-green {
-    font-family: $fontNK90;
-    font-weight: 400;
-    color: $backcolorGreen;
-}
-
-
 .radius {
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.slider-title {
-    font-size: 30px;
+.title {
+    font-family: $fontNK90;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: $backcolorGreen;
 }
+
+.slider-title {
+    font-family: $fontNK90;
+    font-weight: 400;
+    color: $backcolorGreen;
+    font-size: 30px;
+    text-align: center;
+     margin-bottom: 61px;
+}
+
 
 .mobile-only {
     display: none;
@@ -199,29 +197,38 @@ li {
 }
 
 .info-content {
-    margin-top: -668px;
-    margin-bottom: 65px;
+    margin-top: -568px;
+    // margin-bottom: 65px;
     height: 668px;
 
-   
+    .title {
+        font-family: $fontGilroy;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 73px;
+        color: $colorWhite;      
+    }
+
     .container {
         padding-right: 580px;
     }
 
     @media screen and (min-width: 980px) and (max-width: 1280px) {
-        // margin-top: -650px;
+         margin-top: -628px;
+         margin-bottom: 30px;
 
         .title {
             font-size: 50px;
             line-height: 61px;
         }
-    
+
         .description {
             font-size: 20px;
             line-height: 24px;
             margin-bottom: 86px;
         }
-    
+
         .slogan {
             font-size: 15px;
             line-height: 18px;
@@ -269,7 +276,13 @@ li {
         color: $colorBlack;
     }
 
-   
+
+}
+
+.mySwiper {
+    .swiper-slide {
+        opacity: 1;
+    }
 }
 
 .slider-thumb {
@@ -280,9 +293,12 @@ li {
     color: $colorBlack;
     padding: 18px 15px;
 
+
     .swiper-slide-thumb-active & {
         background-color: $backcolorGreen;
         color: #FFFFFF;
+        box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
 
     }
 }
@@ -349,8 +365,8 @@ li {
     width: 125px;
     height: 100px;
     background-size: contain;
-    top: var(--swiper-navigation-top-offset, 45%) !important;
-    right: var(--swiper-navigation-sides-offset, -25px) !important;
+    top: var(--swiper-navigation-top-offset, 45%);
+    right: var(--swiper-navigation-sides-offset, -25px);
     background-position-x: 27px;
 
     &:after {
@@ -363,8 +379,8 @@ li {
     width: 125px;
     height: 100px;
     background-size: contain;
-    top: var(--swiper-navigation-top-offset, 45%) !important;
-    left: var(--swiper-navigation-sides-offset, -25px) !important;
+    top: var(--swiper-navigation-top-offset, 45%);
+    left: var(--swiper-navigation-sides-offset, -25px);
     background-position-x: -27px;
 
     &:after {
