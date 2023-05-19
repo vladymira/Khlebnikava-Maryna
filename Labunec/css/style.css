@@ -303,7 +303,8 @@ li {
       color: #C6C6C6;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      margin: 0 4px; }
     .problem ul.problem-header li.ui-state-active {
       background: #94C31F;
       border-radius: 8px;
@@ -530,5 +531,24 @@ footer ul {
 footer .map {
   position: relative;
   overflow: hidden; }
+
+.container-gallery .swiper {
+  height: 834px; }
+
+.gallery-slide {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1281px;
+  height: 100%; }
+
+.gallery-element {
+  width: 387px;
+  height: 387px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /*# sourceMappingURL=style.css.map */

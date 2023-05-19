@@ -544,10 +544,26 @@
 .main-gallery {
     position: realtive;
 
-    .mySwiper3 {
-        height: 834px;
+    .title {
+        margin-bottom: 13px;
 
-        .gallery-slide {
+        &.main-title {
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            margin-bottom: 62px;
+        }
+
+        &.secondary-title {
+            margin-top: 62px;
+        }
+    }
+
+    .gallery-swiper {
+        height: 945px;
+        padding-bottom: 60px;
+
+        .swiper-slide {
             display: flex;
             justify-content: space-between;
             align-content: space-around;
@@ -556,20 +572,91 @@
             max-width: 1281px;
             height: 100%;
 
-            .gallery-element {
+            .gallery-slide {
                 display: flex;
                 justify-content: space-between;
                 align-content: space-around;
                 flex-direction: row;
                 flex-wrap: wrap;
                 max-width: 1281px;
-                height: 100%;
+                height: 100%; }
+              
+              .gallery-element {
+                width: 387px;
+                height: 387px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center; 
+                background-color: #c4c4c4;
+
+                &.foto1 {
+                    background-image: url('../img/gallery1.png')
+                }
+
+                &.foto2 {
+                    background-image: url('../img/gallery2.png')
+                }
+
+                &.foto3 {
+                    background-image: url('../img/gallery3.png')
+                }
+
+                &.foto4 {
+                    background-image: url('../img/gallery4.png')
+                }
+
+                &.foto5 {
+                    background-image: url('../img/gallery5.png')
+                }
+
+                &.foto6 {
+                    background-image: url('../img/labunec.jpg')
+                }
+            
+            
+            
+            }
+        }
+
+        .swiper-button-prev {
+            background: none;
+            width: 125px;
+            height: 100px;
+            top: var(--swiper-navigation-top-offset, 94%);
+            left: var(--swiper-navigation-sides-offset, 345px);
+            background-position-x: -27px;
+        }
+
+        .swiper-button-next {
+            background: none;
+            width: 125px;
+            height: 100px;
+            top: var(--swiper-navigation-top-offset, 94%);
+            right: var(--swiper-navigation-sides-offset, 345px);
+            background-position-x: 27px;
+        }
+
+        .gallery-all {
+            position: absolute;
+            bottom: 12px;
+            left: 0;
+            text-align: center;
+            width: 100%;
+
+            a {
+                font-family: $fontPoppins;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: $backcolorGreen;
             }
         }
     }
+}
 
-    // .swiper-button-prev {
-    //     top: var(--swiper-navigation-top-offset, 131%);
-    //     left: var(--swiper-navigation-sides-offset, 33%);
-    // }
+.footer {
+    .secondary-title {
+        margin-top: 62px;
+    }
 }

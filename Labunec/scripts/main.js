@@ -29,4 +29,11 @@ $(function () {
         prevEl: ".swiper-button-prev",
       },
     });
+
+    var swiper4 = new Swiper(".mySwiper4", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   })

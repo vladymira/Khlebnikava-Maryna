@@ -347,9 +347,19 @@
 
 .main-gallery {
   position: realtive; }
-  .main-gallery .mySwiper3 {
-    height: 834px; }
-    .main-gallery .mySwiper3 .gallery-slide {
+  .main-gallery .title {
+    margin-bottom: 13px; }
+    .main-gallery .title.main-title {
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      margin-bottom: 62px; }
+    .main-gallery .title.secondary-title {
+      margin-top: 62px; }
+  .main-gallery .gallery-swiper {
+    height: 945px;
+    padding-bottom: 60px; }
+    .main-gallery .gallery-swiper .swiper-slide {
       display: flex;
       justify-content: space-between;
       align-content: space-around;
@@ -357,7 +367,7 @@
       flex-wrap: wrap;
       max-width: 1281px;
       height: 100%; }
-      .main-gallery .mySwiper3 .gallery-slide .gallery-element {
+      .main-gallery .gallery-swiper .swiper-slide .gallery-slide {
         display: flex;
         justify-content: space-between;
         align-content: space-around;
@@ -365,5 +375,54 @@
         flex-wrap: wrap;
         max-width: 1281px;
         height: 100%; }
+      .main-gallery .gallery-swiper .swiper-slide .gallery-element {
+        width: 387px;
+        height: 387px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #c4c4c4; }
+        .main-gallery .gallery-swiper .swiper-slide .gallery-element.foto1 {
+          background-image: url("../img/gallery1.png"); }
+        .main-gallery .gallery-swiper .swiper-slide .gallery-element.foto2 {
+          background-image: url("../img/gallery2.png"); }
+        .main-gallery .gallery-swiper .swiper-slide .gallery-element.foto3 {
+          background-image: url("../img/gallery3.png"); }
+        .main-gallery .gallery-swiper .swiper-slide .gallery-element.foto4 {
+          background-image: url("../img/gallery4.png"); }
+        .main-gallery .gallery-swiper .swiper-slide .gallery-element.foto5 {
+          background-image: url("../img/gallery5.png"); }
+        .main-gallery .gallery-swiper .swiper-slide .gallery-element.foto6 {
+          background-image: url("../img/labunec.jpg"); }
+    .main-gallery .gallery-swiper .swiper-button-prev {
+      background: none;
+      width: 125px;
+      height: 100px;
+      top: var(--swiper-navigation-top-offset, 94%);
+      left: var(--swiper-navigation-sides-offset, 345px);
+      background-position-x: -27px; }
+    .main-gallery .gallery-swiper .swiper-button-next {
+      background: none;
+      width: 125px;
+      height: 100px;
+      top: var(--swiper-navigation-top-offset, 94%);
+      right: var(--swiper-navigation-sides-offset, 345px);
+      background-position-x: 27px; }
+    .main-gallery .gallery-swiper .gallery-all {
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+      text-align: center;
+      width: 100%; }
+      .main-gallery .gallery-swiper .gallery-all a {
+        font-family: "Poppins", Sans Serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #94C31F; }
+
+.footer .secondary-title {
+  margin-top: 62px; }
 
 /*# sourceMappingURL=inner.css.map */
