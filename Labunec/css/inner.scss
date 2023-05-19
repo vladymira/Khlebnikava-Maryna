@@ -39,6 +39,7 @@
                 background-position-x: 100%;
                 background-position-y: 50%;
                 background-repeat: no-repeat;
+                
 
                 &.activ {
                     color: $colorWhite;
@@ -51,6 +52,18 @@
 
                 &:last-child {
                     background-image: none;
+                }
+
+                a {
+                    transition: 0.3s;
+                    &:hover{                        
+                        background-color: $backcolorGreen;
+                        color: $colorWhite;
+                        opacity: 0.7;
+                        border-radius: 5%;
+                        padding: 5px;
+                    }
+    
                 }
             }
         }
