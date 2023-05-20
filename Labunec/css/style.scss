@@ -365,7 +365,7 @@ li {
     .btn {
         width: 266px;
         height: 85px;
-        background: #94C31F;
+        background: $backcolorGreen;
         border-radius: 8px;
         font-family: $fontGilroy;
         font-style: normal;
@@ -435,7 +435,7 @@ li {
         }
 
         li.ui-state-active {
-            background: #94C31F;
+            background: $backcolorGreen;
             border-radius: 8px;
             font-family: $fontGilroy;
             font-style: normal;
