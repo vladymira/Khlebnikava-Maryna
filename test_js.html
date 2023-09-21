@@ -7,8 +7,22 @@
     <title>Осваиваем JS</title>
 </head>
 
+<style>
+  .trans{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition: background-color  1.5s;
+  }
+
+  .trans:hover{
+    background-color: blueviolet;
+  }
+</style>
 <body>
 
+
+  <div class="trans"></div>
    <div id="app">
       <input type="checkbox" value="Tom" v-model="selectedUsers">
        <label>Tom</label><br>
