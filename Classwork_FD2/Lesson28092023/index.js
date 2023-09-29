@@ -75,21 +75,19 @@ function transformToNumber(data){
         return NaN;
       }
   
-    return replaceSymbol(data);
+    return Number(replaceSymbol(data, ',', '.'));
 }
 
 function replaceSymbol(inputStr, targetSymbol, replacementSymbol)
 {
   let resultString = '';
 
-  for (let char in inputStr)
+  for (let char of inputStr)
   {
-
     //resultString += char === targetSymbol? replacementSymbol :  char;
-
     if (char === targetSymbol)
     {
-        resultString += replacementSymbol;
+        resultString += replacementSymbol;        
     }
     else
     {
@@ -97,17 +95,15 @@ function replaceSymbol(inputStr, targetSymbol, replacementSymbol)
     }
   }
   
-  alert(resultString);
   return resultString;
-
 }
 
 
-function isNotEmptyString(value){
-   return Boolean(value);
+function isNotEmptyString(value){    
+   return Boolean(value);   
 }
 
 function isValidAge(inputAge)
-{
+{    
     return Number.isFinite(inputAge) && inputAge >= MIN_AGE && inputAge <= MAX_AGE;
 }
