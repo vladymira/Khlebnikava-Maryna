@@ -1,10 +1,10 @@
-const columns = ['name', 'count', 'price'];
+const columns = ['name', 'count', 'price', 'client'];
 const data = [
-   { name: 'Хлеб', count: 12, price: 14.99 },
-   { name: 'Молоко', count: 3, price: 3.2 },
-   { name: 'Сыр', count: 1, price: 10 },
-   { name: 'Вода', count: 2, price: 5.5 },
-   { name: 'Колбаса', count: 3, price: 25.5 },
+   { name: 'Хлеб', count: 12, price: 14.99, client:'Ivanov' },
+   { name: 'Молоко', count: 3, price: 3.2, client:'Petrov'  },
+   { name: 'Сыр', count: 1, price: 100, client:'Sidorenko'  },
+   { name: 'Вода', count: 2, price: 5.5, client:'Abramovitch'  },
+   { name: 'Колбаса', count: 3, price: 25.5, client:'Vovk'  },
 ];
 
 const textTable = createTextTable(columns, data);
@@ -14,42 +14,35 @@ console.log(textTable);
 function createTextTable(columns, data) {
    let textTable = '';
 
-   const arrLengths = getArrLengths(columns, data);
-   // const maxNameLength = getMaxLength(data, columns[0]);
-   // const maxCountLength = getMaxLength(data, columns[1]);
-   // const maxPriceLength = getMaxLength(data, columns[2]);
-
+   // получаем максимальную длину колонок
+   const columnsLengths = getColumnsLengths(columns, data);
 
    for (let i = 0; i < data.length; i++) {
       let normalizeStr = '│'
-      let { name, count, price } = data[i];
-
-      for (key in data[i]) {         
-         normalizeStr = normalizeStr + (typeof data[i][key] === 'string' ? addSpaceStr(arrLengths[key], data[i][key]) : addSpaceNum(arrLengths[key], data[i][key])) + '│';
-         debugger;
+      
+      for (key in data[i]) {
+         normalizeStr = normalizeStr + (typeof data[i][key] === 'string' ? addSpaceStr(columnsLengths[key], data[i][key]) : addSpaceNum(columnsLengths[key], data[i][key])) + '│';
       }
 
-      
-      textTable = textTable + normalizeStr +  '\n' + ((i === data.length - 1)? getBorder(arrLengths, '├', '┤', '┼') : '') + '\n';
-      debugger;
+      textTable = textTable + normalizeStr + '\n' + ((i === data.length - 1) ? '' : getBorder(columnsLengths, '├', '┤', '┼') + '\n');
    }
 
-   return getBorder(arrLengths, '┌', '┐', '┬') + '\n' + textTable + getBorder(arrLengths, '└', '┘', '┴');
+   return getBorder(columnsLengths, '┌', '┐', '┬') + '\n' + textTable + getBorder(columnsLengths, '└', '┘', '┴');
 }
 
-// возвращает массив максимальных длин значений полей
-function getArrLengths(columns, data) {
-   let arr = {};
+// возвращает объект, содержащий имена колонок и их максимальную длину
+function getColumnsLengths(columns, data) {
+   const allLength = {};
 
-   for (let i = 0; i < columns.length; i++) {     
-      arr[columns[i]] =  getMaxLength(data, columns[i]) ;
+   for (let i = 0; i < columns.length; i++) {
+      allLength[columns[i]] = getMaxLength(data, columns[i]);
    }
-   return arr;
+   return allLength;
 }
 
 // возвращает максимальную длину значения поля в объекте
-function getMaxLength(arrData, fieldName) {
-   const newArr = structuredClone(arrData);
+function getMaxLength(data, fieldName) {
+   const newArr = structuredClone(data);
    return Math.max.apply(null, newArr.map((el) => String(el[fieldName]).length)) + 2;  // учитываем пробелы слева и справа
 }
 
@@ -75,20 +68,21 @@ function addSpaceNum(maxLength, num) {
    return result + ' ';
 }
 
-// строим верхнюю, нижнююи промежуточную границы таблицы
-function getBorder(arrLengths, charStart, charEnd, charMiddle) {
-   
+// строим верхнюю, нижнюю и промежуточную границы таблицы
+function getBorder(columnsLengths, charStart, charEnd, charMiddle) {
+
    let border = charStart;
-   for (let i = 0; i < arrLengths.length; i++) {
-      for (let j = 0; j < arrLengths[i]; j++) {
+   const endEl = Object.keys(columnsLengths).reverse()[0]; // последний ключ в объекте
+
+   for (key in columnsLengths) {
+      for (let j = 0; j < columnsLengths[key]; j++) {
          border += '─';
       }
 
-      border += i === arrLengths.length -1 ? charEnd: charMiddle;
+      border += key === endEl ? charEnd : charMiddle;
    }
 
-   debugger
-   return border ;
+   return border;
 
 }
 // результат в консоли:
