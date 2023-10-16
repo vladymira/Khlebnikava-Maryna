@@ -30,53 +30,25 @@ class Validator {
         if (this.enabled) {
 
             for (let func of this.arrFunctions) {
-                let funcRes = func(testValue);
+                const res = func(testValue);
 
-                if (typeof funcRes === 'function') {
-                    const res = funcRes(testValue)
-                    if (res !== null) {
-                        result[func.name] = res;
-                        if (this.mode === 'single') break;
-                    }
+                if (res !== null) {
+                    result[func.name] = res;
+                    if (this.mode === 'single') break;
                 }
-                else {
-                    const res = funcRes;
-                    if (res !== null) {
-                        result[func.name] = res;
-                        if (this.mode === 'single') break;
-                    }
-
-                }
-
 
             }
 
-            // switch (this.mode) {
-            //     case 'single':
-            //         for (let func of this.arrFunctions){
-            //             let funcRes = func(testValue); 
-            //             debugger;
-            //             if (!funcRes){ // not null, т.е. error
-            //                 result[func.name] = funcRes;
-            //                 break;
-            //              } 
-
-            //         }
-
-            //         break;
-            //     case 'multi':
-            //         for (let func of this.arrFunctions){
-            //             let funcRes = func(testValue); 
-            //             if (!funcRes){ // not null, т.е. error
-            //                 result[func.name] = funcRes;             
-            //              } 
-
-            //         }
-            //         break;
-            //     default:
-            //         result = { error: 'что-то е то с настройками' }
-            // };
         }
+
+        let resultFinal = {};
+
+        Object.values(result).forEach((el) => {
+            console.log(el);
+            resultFinal[Object.keys(el)[0]] = Object.values(el)[0];
+        })
+
+        console.log(resultFinal)
 
 
         console.log(Object.keys(result).length === 0 ? null : result);

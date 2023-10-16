@@ -31,15 +31,23 @@ const validator = new Validator([
 
 
 //console.log(validator);
- validator.validate('test'); // вернёт {minLength: true}
+//  validator.validate('test'); // вернёт {minLength: true}
 // validator.validate(''); // вернёт {required: true}
 // validator.validate('successful'); // вернёт null
 
-// validator.disable(); // выключит валидатор
-// validator.validate('test'); // вернёт null, валидатор выключен, а значит значение всегда валидно
-// validator.toggle(); // снова включит валидатор, т.к. в данный момент он выключен
-// validator.validate('test'); // вернёт {minLength: true}
-// validator.toggle(true); // оставит валидатор включённым, т.к. передано конкретное состояние
+//  validator.disable(); // выключит валидатор
+//  validator.validate('test'); // вернёт null, валидатор выключен, а значит значение всегда валидно
+//  validator.toggle(); // снова включит валидатор, т.к. в данный момент он выключен
+//  validator.validate('test'); // вернёт {minLength: true}
+//  validator.toggle(true); // оставит валидатор включённым, т.к. передано конкретное состояние
 
+ // создаём экземпляр валидатора с режимом 'mutli'. 
+const multiValidator = new Validator([
+    required,
+    minLength(5),
+    maxLength(25),
+], {mode: 'multi'});
+
+multiValidator.validate('');
 
 
