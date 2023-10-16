@@ -30,9 +30,8 @@ const validator = new Validator([
 ]);
 
 
-console.log(validator);
-
-// validator.validate('test'); // вернёт {minLength: true}
+//console.log(validator);
+ validator.validate('test'); // вернёт {minLength: true}
 // validator.validate(''); // вернёт {required: true}
 // validator.validate('successful'); // вернёт null
 

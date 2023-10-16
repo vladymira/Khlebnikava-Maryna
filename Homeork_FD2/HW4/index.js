@@ -3,7 +3,7 @@ class Validator {
 
     constructor(arrFunctions, objConfig) {
         this.mode = objConfig ? objConfig.mode : 'single';
-        this.arrFunctions = arrFunctions;       
+        this.arrFunctions = arrFunctions;
     }
 
 
@@ -19,7 +19,7 @@ class Validator {
 
     //переключает состояние валидатора на обратное от текущего, может принимать конкретное состояние в качестве аргумента
     toggle(value) {
-        this.enabled = value ?? !value;
+        this.enabled = value === undefined ? !this.enabled : value;
     };
 
     //запускает валидатор, в качестве аргумента принимает тестируемое значение и возвращает `null` если значение корректное, 
@@ -27,16 +27,27 @@ class Validator {
     validate(testValue) {
         let result = {};
 
-        if (this.enabled)
-        {
+        if (this.enabled) {
 
-            for (let func of this.arrFunctions){
-                let funcRes = func(testValue); 
-                debugger;
-                if (!funcRes){ // not null, т.е. error
-                    result[func.name] = funcRes;
-                    if (this.mode === 'single') break;
-                 } 
+            for (let func of this.arrFunctions) {
+                let funcRes = func(testValue);
+
+                if (typeof funcRes === 'function') {
+                    const res = funcRes(testValue)
+                    if (res !== null) {
+                        result[func.name] = res;
+                        if (this.mode === 'single') break;
+                    }
+                }
+                else {
+                    const res = funcRes;
+                    if (res !== null) {
+                        result[func.name] = res;
+                        if (this.mode === 'single') break;
+                    }
+
+                }
+
 
             }
 
@@ -49,9 +60,9 @@ class Validator {
             //                 result[func.name] = funcRes;
             //                 break;
             //              } 
-    
+
             //         }
-    
+
             //         break;
             //     case 'multi':
             //         for (let func of this.arrFunctions){
@@ -59,7 +70,7 @@ class Validator {
             //             if (!funcRes){ // not null, т.е. error
             //                 result[func.name] = funcRes;             
             //              } 
-    
+
             //         }
             //         break;
             //     default:
@@ -67,7 +78,7 @@ class Validator {
             // };
         }
 
-       
+
         console.log(Object.keys(result).length === 0 ? null : result);
     }
 }
