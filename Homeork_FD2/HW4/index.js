@@ -25,7 +25,7 @@ class Validator {
     //запускает валидатор, в качестве аргумента принимает тестируемое значение и возвращает `null` если значение корректное, 
     //если значение не прошло валидацию, то возвращает объект с ошибками.
     validate(testValue) {
-        let result = {};
+        const result = {};
 
         if (this.enabled) {
 
@@ -33,23 +33,13 @@ class Validator {
                 const res = func(testValue);
 
                 if (res !== null) {
-                    result[func.name] = res;
-                    if (this.mode === 'single') break;
+                    result[Object.keys(res)[0]] = Object.values(res)[0];
+                    if (this.mode === 'single') { break };
                 }
 
             }
 
         }
-
-        let resultFinal = {};
-
-        Object.values(result).forEach((el) => {
-            console.log(el);
-            resultFinal[Object.keys(el)[0]] = Object.values(el)[0];
-        })
-
-        console.log(resultFinal)
-
 
         console.log(Object.keys(result).length === 0 ? null : result);
     }
