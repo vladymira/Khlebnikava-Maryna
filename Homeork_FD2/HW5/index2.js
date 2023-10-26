@@ -20,13 +20,14 @@ function printWithDelay(str = 'Мама мыла раму', timers = [2, 6, 7, 1
    const arrStr = str.split(' ');
    const arrTimers = getNormalizeTimer(arrStr, timers);
 
-     arrStr.forEach((el, index) => {
-      setTimeout(() => {
-         console.log(el);
-      }, arrTimers[index] * 1000);
-   });
+   for (let i = 0; i < arrStr.length; i++) {
+      callSetTimeout(arrStr[i], arrTimers[i]);
+   }
+     
+}
 
-
+function callSetTimeout(str, timer) {
+   setTimeout(() => { console.log(str); }, timer * 1000);
 }
 
 function getNormalizeTimer(arrStr, timers) {
@@ -39,7 +40,8 @@ function getNormalizeTimer(arrStr, timers) {
       }
    }
 
-   const normalizeTimer = timers.reduce((acc, el, i) => (acc.push(el + (acc[i - 1] ?? 0)), acc), []);
+   //const normalizeTimer = timers.reduce((acc, el, i) => (acc.push(el + (acc[i - 1] ?? 0)), acc), []);
+   timers.forEach((n, i, a) => a[i] += a[i - 1] ?? 0);
 
-   return normalizeTimer;
+   return timers;
 }
