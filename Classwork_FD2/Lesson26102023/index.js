@@ -39,8 +39,11 @@ const iterableObj = {
    values: [1, 2, 3],
 
    // [Symbol.iterator](){
-   //    return this.values.values(); // здесь должен быть метод-итератор
+   //    return this.values.values(); // здесь должен быть метод-итератор, а values() возвращает новый объект итератора массива(см.ниже)
    // } 
+
+   // let iterator = A.values();
+   // console.log(iterator.next().value);
 
    // итератор стал генератором
    *[Symbol.iterator]() {
@@ -51,6 +54,7 @@ const iterableObj = {
 
 //далее
 for (const value of iterableObj) { console.log(value) }
+// т.е. вообще объекты неитерируемые, но мы добавили итератор
 
 
 class Test {
